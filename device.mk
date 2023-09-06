@@ -57,9 +57,6 @@ PRODUCT_PACKAGES += \
     audio.usb.default
 
 PRODUCT_PACKAGES += \
-    agmcap \
-    agmcompressplay \
-    agmplay \
     lib_bt_aptx \
     lib_bt_ble \
     lib_bt_bundle \
