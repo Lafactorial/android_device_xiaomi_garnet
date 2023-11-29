@@ -57,6 +57,13 @@ blob_fixups: blob_fixups_user_type = {
             'libgrpc++_unsecure_prebuilt.so'
         ),
     (
+        'vendor/bin/hw/vendor.dolby.hardware.dms@2.0-service',
+        'vendor/lib64/libdlbdsservice.so',
+        'vendor/lib64/libstagefrightdolby.so',
+        'vendor/lib64/soundfx/libhwdap.so', 
+    ): blob_fixup()
+        .add_needed('libstagefright_foundation-v33.so'),
+    (
         'vendor/etc/camera/pureView_parameter.xml',
         'vendor/etc/camera/pureShot_parameter.xml'
     ): blob_fixup()
