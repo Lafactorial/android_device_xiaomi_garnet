@@ -136,6 +136,10 @@ on property:sys.boot_completed=1
 # Dynamically set IRQ affinity for KGSL and DRM
     exec u:r:vendor_qti_init_shell:s0 -- /vendor/bin/init.garnet.sh
 
+on property:vendor.post_boot.parsed=1
+    # Set restricted cpuset to the same CPUs as system-background
+    copy /dev/cpuset/system-background/cpus /dev/cpuset/restricted/cpus
+
 service vendor.audio-hal /vendor/bin/hw/android.hardware.audio.service
     override
     class hal
