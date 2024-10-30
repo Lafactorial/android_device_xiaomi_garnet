@@ -85,7 +85,6 @@ on property:ro.boot.product.hardware.sku=JP
     enable qti_esepowermanager_service_1_1
 
 on property:sys.boot_completed=1
-    write /sys/devices/virtual/thermal/thermal_message/sconfig 20
 
 service vendor.audio-hal /vendor/bin/hw/android.hardware.audio.service
     override
