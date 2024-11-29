@@ -83,6 +83,12 @@ on post-fs-data
     mkdir /mnt/vendor/persist/goodix 0770 system system
     mkdir /mnt/vendor/persist/fpc 0770 system system
 
+    # IRQ Tuning
+    # IRQ 218: msm_drm0
+    # IRQ 209: kgsl_3d0_irq
+    write /proc/irq/209/smp_affinity_list 1
+    write /proc/irq/218/smp_affinity_list 2
+
 service nqnfc_2_0_hal_service /vendor/bin/hw/vendor.nxp.hardware.nfc@2.0-service
     class early_hal
     user nfc
@@ -120,6 +126,15 @@ on property:ro.boot.product.hardware.sku=JP
     enable qti_esepowermanager_service_1_1
 
 on property:sys.boot_completed=1
+
+    # IRQ Tuning
+    # IRQ 218: msm_drm0
+    # IRQ 209: kgsl_3d0_irq
+    write /proc/irq/209/smp_affinity_list 1
+    write /proc/irq/218/smp_affinity_list 2
+
+# Dynamically set IRQ affinity for KGSL and DRM
+    exec u:r:vendor_qti_init_shell:s0 -- /vendor/bin/init.garnet.sh
 
 service vendor.audio-hal /vendor/bin/hw/android.hardware.audio.service
     override
