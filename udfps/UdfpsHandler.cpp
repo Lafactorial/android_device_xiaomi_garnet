@@ -192,7 +192,17 @@ class XiaomiGarnetUdfpsHander : public UdfpsHandler {
         setFingerDown(false);
     }
 
-  private:
+    void preEnroll() {
+        LOG(DEBUG) << __func__;
+    }
+    void enroll() {
+        LOG(DEBUG) << __func__;
+    }
+    void postEnroll() {
+        LOG(DEBUG) << __func__;
+    }
+
+    private:
     fingerprint_device_t* mDevice;
     android::base::unique_fd touch_fd_;
     android::base::unique_fd disp_fd_;
