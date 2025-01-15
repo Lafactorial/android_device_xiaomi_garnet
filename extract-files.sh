@@ -81,6 +81,10 @@ function blob_fixup() {
             [ "$2" = "" ] && return 0
             sed -ni '/dolby/!p' "${2}"
             ;;
+        vendor/etc/media_codecs_parrot_v0.xml)
+            [ "$2" = "" ] && return 0
+            sed -i -E '/media_codecs_(google_audio|google_telephony|vendor_audio)/d' "${2}"
+            ;;      
         *)
             return 1
             ;;
