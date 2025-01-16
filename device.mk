@@ -7,9 +7,6 @@
 # Call the MiuiCamera setup
 $(call inherit-product-if-exists, device/xiaomi/miuicamera-garnet/device.mk)
 
-# Enable updating of APEXes
-$(call inherit-product, $(SRC_TARGET_DIR)/product/updatable_apex.mk)
-
 # Enable virtual A/B OTA
 $(call inherit-product, $(SRC_TARGET_DIR)/product/virtual_ab_ota/launch_with_vendor_ramdisk.mk)
 
