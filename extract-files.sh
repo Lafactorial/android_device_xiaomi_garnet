@@ -63,7 +63,7 @@ function blob_fixup() {
     case "${1}" in
         system_ext/lib64/libwfdnative.so)
             [ "$2" = "" ] && return 0
-            ${PATCHELF} --remove-needed "android.hidl.base@1.0.so" "${2}"
+            "${PATCHELF}" --remove-needed "android.hidl.base@1.0.so" "${2}"
             ;;
         vendor/bin/hw/android.hardware.security.keymint-service-qti|vendor/lib/libqtikeymint.so|vendor/lib64/libqtikeymint.so)
             [ "$2" = "" ] && return 0
@@ -84,7 +84,11 @@ function blob_fixup() {
         vendor/etc/media_codecs_parrot_v0.xml)
             [ "$2" = "" ] && return 0
             sed -i -E '/media_codecs_(google_audio|google_c2|google_telephony|vendor_audio)/d' "${2}"
-            ;;      
+            ;;
+        vendor/lib/vendor.libdpmframework.so|vendor/lib64/vendor.libdpmframework.so)
+            [ "$2" = "" ] && return 0
+            grep -q "libhidlbase_shim.so" "${2}" || "${PATCHELF}" --add-needed "libhidlbase_shim.so" "${2}"
+            ;;                      
         *)
             return 1
             ;;
