@@ -61,21 +61,18 @@ PRODUCT_PACKAGES += \
     sound_trigger.primary.parrot
 
 PRODUCT_PACKAGES += \
-    agmcap \
-    agmcompressplay \
-    agmplay \
+    lib_bt_aptx \
+    lib_bt_ble \
+    lib_bt_bundle \
     libagm_compress_plugin \
     libagm_mixer_plugin \
     libagm_pcm_plugin \
-    libagmclient \
-    libagmmixer \
     libbatterylistener \
     libfmpal \
     libpalclient \
     libqcompostprocbundle \
     libqcomvisualizer \
     libqcomvoiceprocessing \
-    libsndcardparser \
     libvolumelistener
 
 AUDIO_HAL_DIR := hardware/qcom-caf/sm8450/audio/primary-hal
