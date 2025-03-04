@@ -98,8 +98,6 @@ blob_fixups: blob_fixups_user_type = {
         .regex_replace('.+<Minor OpcodeValue="0x11" Node="/sys/devices/system/cpu/bus_dcvs/LLCC/190b6400.qcom,bwmon-llcc/min_freq" />+\n', ''),    
     'vendor/lib64/libcamximageformatutils.so': blob_fixup()
         .replace_needed('vendor.qti.hardware.display.config-V2-ndk_platform.so', 'vendor.qti.hardware.display.config-V2-ndk.so'),
-    ('vendor/lib64/libqcrilNr.so', 'vendor/lib64/libril-db.so'): blob_fixup()
-        .binary_regex_replace(rb'persist\.vendor\.radio\.poweron_opt', rb'persist.vendor.radio.poweron_ign'), 
     'vendor/lib64/libkaraokepal.so': blob_fixup()
         .replace_needed('audio.primary.parrot.so', 'audio.primary.garnet.so'),
     'vendor/lib64/nfc_nci.nqx.default.hw.v1.so': blob_fixup()
