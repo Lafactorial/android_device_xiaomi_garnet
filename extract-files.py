@@ -88,8 +88,6 @@ blob_fixups: blob_fixups_user_type = {
         .regex_replace(r'=(\d+)>', r'="\1">'),
     ('vendor/etc/init/hw/init.batterysecret.rc', 'vendor/etc/init/hw/init.mi_thermald.rc', 'vendor/etc/init/hw/init.qti.kernel.rc'): blob_fixup()
         .regex_replace(r'on charger', r'on property:init.svc.vendor.charger=running'),
-    'vendor/etc/vintf/manifest/c2_manifest_vendor.xml': blob_fixup()
-        .regex_replace(r'.+dolby.+\n', ''),
     'vendor/etc/media_codecs_parrot_v0.xml': blob_fixup()
         .regex_replace(r'.+media_codecs_(google_audio|google_c2|google_telephony|vendor_audio).+\n', ''),
     ('vendor/lib64/hw/camera.qcom.so', 'vendor/lib64/hw/com.qti.chi.override.so', 'vendor/lib64/libcamxcommonutils.so', 'vendor/lib64/libmialgoengine.so'): blob_fixup()
