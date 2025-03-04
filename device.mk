@@ -384,7 +384,8 @@ PRODUCT_PACKAGES += \
 
 # Parts
 PRODUCT_PACKAGES += \
-    XiaomiParts
+    XiaomiParts \
+    XiaomiVoIPFix
 
 # Partitions
 PRODUCT_PACKAGES += \
