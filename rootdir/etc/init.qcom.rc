@@ -404,6 +404,9 @@ on post-fs-data
     # Create the directory used by qrtr-lookup
     mkdir /data/vendor/qrtr 0775 system system
 
+    # Dolby
+    start vendor.dolby_fix
+
 service nqnfcinfo /system/vendor/bin/nqnfcinfo
     class late_start
     group nfc
@@ -1021,3 +1024,9 @@ service qrtr-lookup /vendor/bin/qrtr-lookup
     disabled
     oneshot
 
+service vendor.dolby_fix /vendor/bin/init.dolby_fix.sh
+    class main
+    user media
+    group media
+    disabled
+    oneshot

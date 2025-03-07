@@ -1,0 +1,16 @@
+type vendor_init-dolby, domain;
+type vendor_init-dolby_exec, exec_type, vendor_file_type, file_type;
+
+init_daemon_domain(vendor_init-dolby)
+
+allow vendor_init-dolby vendor_data_file:dir { rw_dir_perms setattr };
+allow vendor_init-dolby vendor_data_file:file { rw_file_perms setattr unlink };
+
+allow vendor_init-dolby self:capability { fowner fsetid };
+
+allow vendor_init-dolby vendor_toolbox_exec:file { execute execute_no_trans getattr map open read };
+allow vendor_init-dolby vendor_shell_exec:file { execute getattr map read };
+
+set_prop(vendor_init-dolby, vendor_audio_prop);
+
+dontaudit vendor_init-dolby self:capability { dac_override dac_read_search };
