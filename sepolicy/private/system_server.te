@@ -1,0 +1,2 @@
+# CachedAppOptimizer
+allow system_server audioserver_tmpfs:file rw_file_perms;
