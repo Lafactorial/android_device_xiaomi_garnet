@@ -44,21 +44,6 @@
     <string name="thermal_tile_enabled_subtitle">Enabled</string>
     <string name="thermal_tile_disabled_subtitle">Disabled</string>
 
-    <!-- Per-app refresh rate -->
-    <string name="refresh_title">Per-app refresh rate</string>
-    <string name="refresh_summary">Set the maximum refresh rate for a specific application</string>
-    <string name="refresh_default">Default</string>
-    <string name="refresh_standard">60Hz</string>
-    <string name="refresh_extreme">120Hz</string>
-    <string name="refresh_land">60Hz on Landscape</string>    
-
-    <!-- Doze Strings -->
-    <string name="doze_brightness_low">Low brightness</string>
-    <string name="doze_brightness_high">High brightness</string>
-    <string name="doze_brightness_adaptive">Adaptive brightness</string>
-    <string name="doze_brightness_title">Doze brightness level</string>
-    <string name="doze_brightness_summary">Brightness level of doze pulse screen (% of max allowed brightness)</string>
-
     <!-- Clear Speaker -->
    <string name="clear_speaker_title">Clear speaker</string>
    <string name="clear_speaker_summary">Play a 30-second audio to clear the speaker</string>
@@ -99,15 +84,224 @@
     <string name="auto_hbm_disable_time_title">Disable time</string>
     <string name="auto_hbm_disable_time_summary">Duration in seconds for which HBM is deactivated if the light threshold falls below the set level</string>
 
-    <!-- GameBar Overlay -->
+    <!-- GameBar Main -->
     <string name="game_bar_title">GameBar</string>
     <string name="game_bar_summary">Enable the system overlay (FPS, Temp, etc.)</string>
+    <string name="game_bar_tile_label">GameBar</string>
+    <string name="game_bar_tile_description">Toggle the game overlay</string>
+    <string name="game_bar_enable_title">Enable GameBar Overlay</string>
+
+    <!-- Overlay Permissions -->
     <string name="overlay_permission_required">Overlay permission is required</string>
     <string name="overlay_permission_granted">Overlay permission granted</string>
     <string name="overlay_permission_denied">Overlay permission denied</string>
-    <string name="game_bar_tile_label">GameBar</string>
-    <string name="game_bar_tile_description">Toggle the game overlay</string>
+
+    <!-- Overlay Features -->
+    <string name="overlay_features_title">Overlay Features</string>
+    <string name="game_bar_fps_enable_title">FPS Overlay</string>
+    <string name="game_bar_fps_enable_summary">Show current FPS on screen</string>
+    <string name="game_bar_temp_enable_title">Device Temperature</string>
+    <string name="game_bar_temp_enable_summary">Show device (battery) temperature</string>
+    <string name="game_bar_cpu_usage_enable_title">CPU Usage</string>
+    <string name="game_bar_cpu_usage_enable_summary">Show current CPU usage percentage</string>
+    <string name="game_bar_cpu_clock_enable_title">CPU Clock Speeds</string>
+    <string name="game_bar_cpu_clock_enable_summary">Show current CPU clock speeds for each core</string>
+    <string name="game_bar_cpu_temp_enable_title">CPU Temperature</string>
+    <string name="game_bar_cpu_temp_enable_summary">Show CPU temperature (thermal_zone0)</string>
+    <string name="game_bar_ram_enable_title">RAM Usage</string>
+    <string name="game_bar_ram_enable_summary">Show current RAM usage in MB</string>
+    <string name="game_bar_gpu_usage_enable_title">GPU Usage</string>
+    <string name="game_bar_gpu_usage_enable_summary">Show GPU usage percentage</string>
+    <string name="game_bar_gpu_clock_enable_title">GPU Clock Speed</string>
+    <string name="game_bar_gpu_clock_enable_summary">Show current GPU clock frequency</string>
+    <string name="game_bar_gpu_temp_enable_title">GPU Temperature</string>
+    <string name="game_bar_gpu_temp_enable_summary">Show current GPU temperature</string>
+
+    <!-- FPS Measurement Method -->
+    <string name="fps_measurement_method_title">FPS Measurement Method</string>
+    <string name="game_bar_fps_method_title">Select FPS Method</string>
+    <string name="game_bar_fps_method_summary">Choose between the New API method (default) and Legacy Sysfs</string>
+
+    <!-- Customization -->
+    <string name="customization_title">Customization</string>
+    <string name="game_bar_text_size_title">Text Size</string>
+    <string name="game_bar_text_size_summary">Adjust the size of overlay text</string>
+    <string name="game_bar_background_alpha_title">Background Transparency</string>
+    <string name="game_bar_background_alpha_summary">Adjust the transparency of the background</string>
+    <string name="game_bar_corner_radius_title">Overlay Corner Radius</string>
+    <string name="game_bar_corner_radius_summary">Adjust how rounded the overlay corners should be</string>
+    <string name="game_bar_padding_title">Overlay Padding</string>
+    <string name="game_bar_padding_summary">Adjust the space around the stats</string>
+    <string name="game_bar_item_spacing_title">Item Spacing</string>
+    <string name="game_bar_item_spacing_summary">Adjust spacing between overlay lines</string>
+    <string name="game_bar_update_interval_title">Update Interval</string>
+    <string name="game_bar_update_interval_summary">Set how often the overlay values update</string>
+    <string name="game_bar_title_color_title">Stat Title Color</string>
+    <string name="game_bar_title_color_summary">Color for \'FPS\', \'Temp\', \'CPU\', etc. text</string>
+    <string name="game_bar_value_color_title">Stat Value Color</string>
+    <string name="game_bar_value_color_summary">Color for numeric stats (e.g., \'29\', \'32.0°C\')</string>
+    <string name="game_bar_position_title">Overlay Position</string>
+    <string name="game_bar_position_summary">Select the position of the overlay on screen</string>
+    <string name="game_bar_format_title">Overlay Format</string>
+    <string name="game_bar_format_summary">Choose between Full or Minimal display</string>
+    <string name="game_bar_overlay_format_toast">Overlay format changed to: %s</string>
+    <string name="game_bar_format_entries_full">Full</string>
+    <string name="game_bar_format_entries_minimal">Minimal</string>
+
+    <!-- Split Config -->
+    <string name="split_config_title">Split Config</string>
+    <string name="game_bar_split_mode_title">Split Mode</string>
+    <string name="game_bar_split_mode_summary">Choose Side-by-Side or Stacked arrangement</string>
+
+    <!-- Overlay Gesture Controls -->
+    <string name="overlay_gesture_controls_title">Overlay Gesture Controls</string>
+    <string name="game_bar_single_tap_toggle_title">Enable Single Tap to Toggle</string>
+    <string name="game_bar_single_tap_toggle_summary">Tap once to switch between full and minimal overlay formats</string>
+    <string name="game_bar_doubletap_capture_title">Enable Double Tap to Capture</string>
+    <string name="game_bar_doubletap_capture_summary">Double-tap overlay to start/stop capture logs</string>
+    <string name="game_bar_longpress_enable_title">Enable Long Press</string>
+    <string name="game_bar_longpress_enable_summary">Long-press overlay to access GameBar settings</string>
+    <string name="game_bar_longpress_timeout_title">Long Press Duration</string>
+    <string name="game_bar_longpress_timeout_summary">Set the duration required to long-press the overlay</string>
+
+    <!-- Capture Logs -->
+    <string name="capture_logs_title">Capture Logs</string>
+    <string name="game_bar_capture_start_title">Start Logging</string>
+    <string name="game_bar_capture_start_summary">Begin capturing FPS and performance data in real-time</string>
+    <string name="game_bar_capture_stop_title">Stop Logging</string>
+    <string name="game_bar_capture_stop_summary">Stop capturing FPS and performance data in real-time</string>
+    <string name="game_bar_capture_export_title">Export GameBar Log Data</string>
+    <string name="game_bar_capture_export_summary">Save the captured FPS and performance data as a CSV file</string>
+    <string name="game_bar_capture_start_toast">Started logging data</string>
+    <string name="game_bar_capture_stop_toast">Stopped logging data</string>
+    <string name="game_bar_capture_export_toast">Exported log data to file</string>
+    <string name="game_bar_doubletap_capture_start_toast">Capture started</string>
+    <string name="game_bar_doubletap_capture_stop_toast">Capture stopped</string>
+
+    <!-- Auto Enable GameBar -->
+    <string name="auto_enable_gamebar_title">Auto Enable GameBar</string>
+    <string name="game_bar_auto_enable_title">Auto-Enable GameBar for Selected Apps</string>
+    <string name="game_bar_auto_enable_summary">If turned on, selected apps will auto-enable GameBar even if the main switch is off</string>
+    <string name="game_bar_app_selector_title">Select Apps</string>
+    <string name="game_bar_app_selector_summary">Add apps that should auto-enable GameBar</string>
+    <string name="game_bar_app_remover_title">Remove Selected Apps</string>
+    <string name="game_bar_app_remover_summary">Remove apps from the auto-enable list</string>
+    <string name="game_bar_app_remover_activity_title">Remove Auto-Enable Apps</string>
+    <string name="game_bar_app_selector_activity_title">Select Apps for GameBar</string>
+    <string name="game_bar_app_added_toast">added</string>
+    <string name="game_bar_app_removed_toast">removed</string>
+
+    <!-- FPS Method -->
+    <string-array name="game_bar_fps_method_entries">
+        <item>New API (Default)</item>
+        <item>Legacy Sysfs</item>
+    </string-array>
+
+    <string-array name="game_bar_fps_method_values" translatable="false">
+        <item>new</item>
+        <item>legacy</item>
+    </string-array>
+
+    <!-- Update Interval -->
+    <string-array name="fps_overlay_update_interval_entries">
+        <item>Every 500ms</item>
+        <item>Every second</item>
+        <item>Every 2 seconds</item>
+        <item>Every 5 seconds</item>
+    </string-array>
+
+    <string-array name="fps_overlay_update_interval_values" translatable="false">
+        <item>500</item>
+        <item>1000</item>
+        <item>2000</item>
+        <item>5000</item>
+    </string-array>
+
+    <!-- Position -->
+    <string-array name="fps_overlay_position_entries">
+        <item>Top Left</item>
+        <item>Top Center</item>
+        <item>Top Right</item>
+        <item>Bottom Left</item>
+        <item>Bottom Center</item>
+        <item>Bottom Right</item>
+        <item>Custom Draggable</item>
+    </string-array>
+
+    <string-array name="fps_overlay_position_values" translatable="false">
+        <item>top_left</item>
+        <item>top_center</item>
+        <item>top_right</item>
+        <item>bottom_left</item>
+        <item>bottom_center</item>
+        <item>bottom_right</item>
+        <item>draggable</item>
+    </string-array>
+
+    <!-- Overlay Color -->
+    <string-array name="fps_overlay_color_entries">
+        <item>White</item>
+        <item>Crimson</item>
+        <item>Fruit Salad</item>
+        <item>Royal Blue</item>
+        <item>Amber</item>
+        <item>Teal</item>
+        <item>Electric Violet</item>
+        <item>Magenta</item>
+    </string-array>
+
+    <string-array name="fps_overlay_color_values" translatable="false">
+        <item>#FFFFFF</item>
+        <item>#DC143C</item>
+        <item>#4CAF50</item>
+        <item>#4169E1</item>
+        <item>#FFBF00</item>
+        <item>#008080</item>
+        <item>#8A2BE2</item>
+        <item>#FF1493</item>
+    </string-array>
+
+    <!-- Overlay Format -->
+    <string-array name="game_bar_format_entries">
+        <item>Full</item>
+        <item>Minimal</item>
+    </string-array>
+
+    <string-array name="game_bar_format_values" translatable="false">
+        <item>full</item>
+        <item>minimal</item>
+    </string-array>
+
+    <!-- Split Mode -->
+    <string-array name="game_bar_split_mode_entries">
+        <item>Side-by-Side</item>
+        <item>Stacked</item>
+    </string-array>
+
+    <string-array name="game_bar_split_mode_values" translatable="false">
+        <item>side_by_side</item>
+        <item>stacked</item>
+    </string-array>
+
+    <!-- Long Press Timeout -->
+    <string-array name="game_bar_longpress_entries">
+        <item>0.5 second</item>
+        <item>1 second</item>
+        <item>3 seconds</item>
+        <item>5 seconds</item>
+    </string-array>
     
+    <string-array name="game_bar_longpress_values" translatable="false">
+        <item>500</item>
+        <item>1000</item>
+        <item>3000</item>
+        <item>5000</item>
+    </string-array>
+
+    <!-- Powertools Main Title -->
+    <string name="Powertools_title">Powertools</string>
+    <string name="Powertools_summary">Customize power profiles, CPU/GPU frequencies, and governor settings for optimized performance and efficiency</string>
+
     <!-- Power Profile Strings -->
     <string name="powerprofile_tile_label">Power Profile</string>
     <string name="powerprofile_mode_balance">Balanced</string>
@@ -121,12 +315,103 @@
     <string name="gaming_mode_title">Game Boost</string>
     <string name="gaming_mode_notification">Game Boost Mode is now activated for optimal gaming performance.</string>
     <string name="power_profile_footer_summary">Note: Higher frequencies are available only in Game Boost mode.</string>
+    <string name="power_profile_mode_title">Select Power Profile Mode</string>
+    <string name="power_profile_mode_summary">%s</string>
+    <string name="power_profile_applied">Applied successfully power profile to %1$s</string>
 
-    <!-- Powertools Main Title -->
-    <string name="Powertools_title">Powertools</string>
-    <string name="Powertools_summary">Customize power profiles, CPU/GPU frequencies, and governor settings for optimized performance and efficiency</string>
-
-    <!-- GPU Strings -->
+    <!-- GPU Optimizer Section -->
+    <string name="gpu_enable_title">Enable GPU Optimizer</string>
+    <string name="gpu_enable_summary">Toggle GPU optimizations</string>
+    <string name="gpu_freq_category_title">Configure GPU Frequency</string>
     <string name="gpu_min_frequency">GPU Minimum Frequency</string>
     <string name="gpu_max_frequency">GPU Maximum Frequency</string>
+    <string name="gpu_disabled_defaults_restored">Optimizer GPU disabled, defaults restored</string>
+    <string name="gpu_optimizer_enabled">GPU optimizer enabled</string>
+    <string name="gpu_min_freq_exceeds_max">Failed: GPU min frequency cannot exceed max frequency</string>
+    <string name="gpu_max_freq_below_min">Failed: GPU max frequency cannot be lower than min frequency</string>
+    <string name="gpu_min_freq_applied">GPU min frequency -> %1$s</string>
+    <string name="gpu_max_freq_applied">GPU max frequency -> %1$s</string>
+
+    <!-- CPU Optimizer Section -->
+    <string name="cpu_enable_title">Enable CPU Optimizer</string>
+    <string name="cpu_enable_summary">Toggle CPU optimizations</string>
+    <string name="cpu_optimizer_disabled_defaults_restored">CPU optimizer disabled, defaults restored</string>
+    <string name="cpu_optimizer_enabled">CPU optimizer enabled</string>
+
+    <!-- CPU Little Cluster -->
+    <string name="cpu_little_category_title">Configure CPU Little Cluster</string>
+    <string name="cpu_little_min_frequency_title">Min Frequency</string>
+    <string name="cpu_little_min_frequency_summary">%s</string>
+    <string name="cpu_little_max_frequency_title">Max Frequency</string>
+    <string name="cpu_little_max_frequency_summary">%s</string>
+    <string name="cpu_little_governor_title">Governor</string>
+    <string name="cpu_little_governor_summary">%s</string>
+    <string name="cpu_little_min_freq_exceeds_max">Failed: CPU little min frequency cannot exceed max</string>
+    <string name="cpu_little_max_freq_below_min">Failed: CPU little max frequency cannot be lower than min</string>
+    <string name="cpu_little_min_freq_applied">CPU little min frequency -> %1$s</string>
+    <string name="cpu_little_max_freq_applied">CPU little max frequency -> %1$s</string>
+    <string name="cpu_little_governor_applied">CPU little governor -> %1$s</string>
+
+    <!-- CPU Big Cluster -->
+    <string name="cpu_big_category_title">Configure CPU Big Cluster</string>
+    <string name="cpu_big_min_frequency_title">Min Frequency</string>
+    <string name="cpu_big_min_frequency_summary">%s</string>
+    <string name="cpu_big_max_frequency_title">Max Frequency</string>
+    <string name="cpu_big_max_frequency_summary">%s</string>
+    <string name="cpu_big_governor_title">Governor</string>
+    <string name="cpu_big_governor_summary">%s</string>
+    <string name="cpu_big_min_freq_exceeds_max">Failed: CPU big min frequency cannot exceed max</string>
+    <string name="cpu_big_max_freq_below_min">Failed: CPU big max frequency cannot be lower than min</string>
+    <string name="cpu_big_min_freq_applied">CPU big min frequency -> %1$s</string>
+    <string name="cpu_big_max_freq_applied">CPU big max frequency -> %1$s</string>
+    <string name="cpu_big_governor_applied">CPU big governor -> %1$s</string>
+
+    <!-- CPU Prime Cluster -->
+    <string name="cpu_prime_category_title">Configure CPU Prime Cluster</string>
+    <string name="cpu_prime_min_frequency_title">Min Frequency</string>
+    <string name="cpu_prime_min_frequency_summary">%s</string>
+    <string name="cpu_prime_max_frequency_title">Max Frequency</string>
+    <string name="cpu_prime_max_frequency_summary">%s</string>
+    <string name="cpu_prime_governor_title">Governor</string>
+    <string name="cpu_prime_governor_summary">%s</string>
+    <string name="cpu_prime_min_freq_exceeds_max">Failed: CPU prime min frequency cannot exceed max</string>
+    <string name="cpu_prime_max_freq_below_min">Failed: CPU prime max frequency cannot be lower than min</string>
+    <string name="cpu_prime_min_freq_applied">CPU prime min frequency -> %1$s</string>
+    <string name="cpu_prime_max_freq_applied">CPU prime max frequency -> %1$s</string>
+    <string name="cpu_prime_governor_applied">CPU prime governor -> %1$s</string>
+    
+    <!-- Power Profile -->
+    <string-array name="power_profile_modes">
+        <item>Balanced</item>
+        <item>Gaming</item>
+        <item>Performance</item>
+        <item>Battery Saver</item>
+        <item>Unknown</item>
+    </string-array>
+
+    <string-array name="power_profile_mode_values" translatable="false">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+    </string-array>
+
+    <!-- CPU Governor Options (for all clusters) -->
+    <string-array name="cpu_governor_entries">
+        <item>walt</item>
+        <item>conservative</item>
+        <item>powersave</item>
+        <item>performance</item>
+        <item>schedutil</item>
+    </string-array>
+
+    <string-array name="cpu_governor_values" translatable="false">
+        <item>walt</item>
+        <item>conservative</item>
+        <item>powersave</item>
+        <item>performance</item>
+        <item>schedutil</item>
+    </string-array>
+
 </resources>

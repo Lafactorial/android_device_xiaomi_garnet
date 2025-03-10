@@ -248,7 +248,7 @@ public class PowertoolsSettingsFragment extends PreferenceFragmentCompat
             mPowerProfileUtil.setMode(mode);
             mPowerProfilePreference.setSummary(mPowerProfileUtil.getModeLabel());
             Toast.makeText(getActivity(),
-                    "Applied successfully power profile to " + mPowerProfileUtil.getModeLabel(),
+                    getString(R.string.power_profile_applied, mPowerProfileUtil.getModeLabel()),
                     Toast.LENGTH_SHORT).show();
             return true;
         }
@@ -260,11 +260,11 @@ public class PowertoolsSettingsFragment extends PreferenceFragmentCompat
                 GPUUtils.setGPUMinFrequency(GPU_DEFAULT_MIN);
                 GPUUtils.setGPUMaxFrequency(GPU_DEFAULT_MAX);
                 Toast.makeText(getActivity(),
-                        "GPU disabled, defaults restored",
+                        getString(R.string.gpu_disabled_defaults_restored),
                         Toast.LENGTH_SHORT).show();
             } else {
                 Toast.makeText(getActivity(),
-                        "GPU optimizer enabled",
+                        getString(R.string.gpu_optimizer_enabled),
                         Toast.LENGTH_SHORT).show();
             }
             if (mGpuMinFreqPref != null) mGpuMinFreqPref.setEnabled(enable);
@@ -279,13 +279,13 @@ public class PowertoolsSettingsFragment extends PreferenceFragmentCompat
             long curMaxVal = Long.parseLong(mGpuMaxFreqPref.getValue());
             if (newMinVal > curMaxVal) {
                 Toast.makeText(getActivity(),
-                        "Failed: GPU min frequency cannot exceed max frequency",
+                        getString(R.string.gpu_min_freq_exceeds_max),
                         Toast.LENGTH_SHORT).show();
                 return false;
             }
             GPUUtils.setGPUMinFrequency(newMin);
             Toast.makeText(getActivity(),
-                    "GPU min frequency -> " + formatFrequency(newMinVal),
+                    getString(R.string.gpu_min_freq_applied, formatFrequency(newMinVal)),
                     Toast.LENGTH_SHORT).show();
             return true;
         }
@@ -297,13 +297,13 @@ public class PowertoolsSettingsFragment extends PreferenceFragmentCompat
             long curMinVal = Long.parseLong(mGpuMinFreqPref.getValue());
             if (newMaxVal < curMinVal) {
                 Toast.makeText(getActivity(),
-                        "Failed: GPU max frequency cannot be lower than min frequency",
+                        getString(R.string.gpu_max_freq_below_min),
                         Toast.LENGTH_SHORT).show();
                 return false;
             }
             GPUUtils.setGPUMaxFrequency(newMax);
             Toast.makeText(getActivity(),
-                    "GPU max frequency -> " + formatFrequency(newMaxVal),
+                    getString(R.string.gpu_max_freq_applied, formatFrequency(newMaxVal)),
                     Toast.LENGTH_SHORT).show();
             return true;
         }
@@ -319,11 +319,11 @@ public class PowertoolsSettingsFragment extends PreferenceFragmentCompat
                 CPUUtils.setCPUPrimeFreq(
                         CPU_PRIME_DEFAULT_MIN, CPU_PRIME_DEFAULT_MAX, CPU_PRIME_DEFAULT_GOV);
                 Toast.makeText(getActivity(),
-                        "CPU optimizer disabled, defaults restored",
+                        getString(R.string.cpu_optimizer_disabled_defaults_restored),
                         Toast.LENGTH_SHORT).show();
             } else {
                 Toast.makeText(getActivity(),
-                        "CPU optimizer enabled",
+                        getString(R.string.cpu_optimizer_enabled),
                         Toast.LENGTH_SHORT).show();
             }
             return true;
@@ -336,14 +336,14 @@ public class PowertoolsSettingsFragment extends PreferenceFragmentCompat
             long curMaxVal = Long.parseLong(mCpuLittleMaxFreqPref.getValue());
             if (newMinVal > curMaxVal) {
                 Toast.makeText(getActivity(),
-                        "Failed: CPU little min frequency cannot exceed max",
+                        getString(R.string.cpu_little_min_freq_exceeds_max),
                         Toast.LENGTH_SHORT).show();
                 return false;
             }
             CPUUtils.setCPULittleFreq(newMin, mCpuLittleMaxFreqPref.getValue(),
                     mCpuLittleGovernorPref.getValue());
             Toast.makeText(getActivity(),
-                    "CPU little min frequency -> " + formatFrequency(newMinVal),
+                    getString(R.string.cpu_little_min_freq_applied, formatFrequency(newMinVal)),
                     Toast.LENGTH_SHORT).show();
             return true;
         }
@@ -353,14 +353,14 @@ public class PowertoolsSettingsFragment extends PreferenceFragmentCompat
             long curMinVal = Long.parseLong(mCpuLittleMinFreqPref.getValue());
             if (newMaxVal < curMinVal) {
                 Toast.makeText(getActivity(),
-                        "Failed: CPU little max frequency cannot be lower than min",
+                        getString(R.string.cpu_little_max_freq_below_min),
                         Toast.LENGTH_SHORT).show();
                 return false;
             }
             CPUUtils.setCPULittleFreq(mCpuLittleMinFreqPref.getValue(), newMax,
                     mCpuLittleGovernorPref.getValue());
             Toast.makeText(getActivity(),
-                    "CPU little max frequency -> " + formatFrequency(newMaxVal),
+                    getString(R.string.cpu_little_max_freq_applied, formatFrequency(newMaxVal)),
                     Toast.LENGTH_SHORT).show();
             return true;
         }
@@ -368,7 +368,7 @@ public class PowertoolsSettingsFragment extends PreferenceFragmentCompat
             CPUUtils.setCPULittleFreq(mCpuLittleMinFreqPref.getValue(),
                     mCpuLittleMaxFreqPref.getValue(), newValue.toString());
             Toast.makeText(getActivity(),
-                    "CPU little governor -> " + newValue.toString(),
+                    getString(R.string.cpu_little_governor_applied, newValue.toString()),
                     Toast.LENGTH_SHORT).show();
             return true;
         }
@@ -380,14 +380,14 @@ public class PowertoolsSettingsFragment extends PreferenceFragmentCompat
             long curMaxVal = Long.parseLong(mCpuBigMaxFreqPref.getValue());
             if (newMinVal > curMaxVal) {
                 Toast.makeText(getActivity(),
-                        "Failed: CPU big min frequency cannot exceed max",
+                        getString(R.string.cpu_big_min_freq_exceeds_max),
                         Toast.LENGTH_SHORT).show();
                 return false;
             }
             CPUUtils.setCPUBigFreq(newMin, mCpuBigMaxFreqPref.getValue(),
                     mCpuBigGovernorPref.getValue());
             Toast.makeText(getActivity(),
-                    "CPU big min frequency -> " + formatFrequency(newMinVal),
+                    getString(R.string.cpu_big_min_freq_applied, formatFrequency(newMinVal)),
                     Toast.LENGTH_SHORT).show();
             return true;
         }
@@ -397,14 +397,14 @@ public class PowertoolsSettingsFragment extends PreferenceFragmentCompat
             long curMinVal = Long.parseLong(mCpuBigMinFreqPref.getValue());
             if (newMaxVal < curMinVal) {
                 Toast.makeText(getActivity(),
-                        "Failed: CPU big max frequency cannot be lower than min",
+                        getString(R.string.cpu_big_max_freq_below_min),
                         Toast.LENGTH_SHORT).show();
                 return false;
             }
             CPUUtils.setCPUBigFreq(mCpuBigMinFreqPref.getValue(), newMax,
                     mCpuBigGovernorPref.getValue());
             Toast.makeText(getActivity(),
-                    "CPU big max frequency -> " + formatFrequency(newMaxVal),
+                    getString(R.string.cpu_big_max_freq_applied, formatFrequency(newMaxVal)),
                     Toast.LENGTH_SHORT).show();
             return true;
         }
@@ -412,7 +412,7 @@ public class PowertoolsSettingsFragment extends PreferenceFragmentCompat
             CPUUtils.setCPUBigFreq(mCpuBigMinFreqPref.getValue(),
                     mCpuBigMaxFreqPref.getValue(), newValue.toString());
             Toast.makeText(getActivity(),
-                    "CPU big governor -> " + newValue.toString(),
+                    getString(R.string.cpu_big_governor_applied, newValue.toString()),
                     Toast.LENGTH_SHORT).show();
             return true;
         }
@@ -424,14 +424,14 @@ public class PowertoolsSettingsFragment extends PreferenceFragmentCompat
             long curMaxVal = Long.parseLong(mCpuPrimeMaxFreqPref.getValue());
             if (newMinVal > curMaxVal) {
                 Toast.makeText(getActivity(),
-                        "Failed: CPU prime min frequency cannot exceed max",
+                        getString(R.string.cpu_prime_min_freq_exceeds_max),
                         Toast.LENGTH_SHORT).show();
                 return false;
             }
             CPUUtils.setCPUPrimeFreq(newMin, mCpuPrimeMaxFreqPref.getValue(),
                     mCpuPrimeGovernorPref.getValue());
             Toast.makeText(getActivity(),
-                    "CPU prime min frequency -> " + formatFrequency(newMinVal),
+                    getString(R.string.cpu_prime_min_freq_applied, formatFrequency(newMinVal)),
                     Toast.LENGTH_SHORT).show();
             return true;
         }
@@ -441,14 +441,14 @@ public class PowertoolsSettingsFragment extends PreferenceFragmentCompat
             long curMinVal = Long.parseLong(mCpuPrimeMinFreqPref.getValue());
             if (newMaxVal < curMinVal) {
                 Toast.makeText(getActivity(),
-                        "Failed: CPU prime max frequency cannot be lower than min",
+                        getString(R.string.cpu_prime_max_freq_below_min),
                         Toast.LENGTH_SHORT).show();
                 return false;
             }
             CPUUtils.setCPUPrimeFreq(mCpuPrimeMinFreqPref.getValue(), newMax,
                     mCpuPrimeGovernorPref.getValue());
             Toast.makeText(getActivity(),
-                    "CPU prime max frequency -> " + formatFrequency(newMaxVal),
+                    getString(R.string.cpu_prime_max_freq_applied, formatFrequency(newMaxVal)),
                     Toast.LENGTH_SHORT).show();
             return true;
         }
@@ -456,7 +456,7 @@ public class PowertoolsSettingsFragment extends PreferenceFragmentCompat
             CPUUtils.setCPUPrimeFreq(mCpuPrimeMinFreqPref.getValue(),
                     mCpuPrimeMaxFreqPref.getValue(), newValue.toString());
             Toast.makeText(getActivity(),
-                    "CPU prime governor -> " + newValue.toString(),
+                    getString(R.string.cpu_prime_governor_applied, newValue.toString()),
                     Toast.LENGTH_SHORT).show();
             return true;
         }

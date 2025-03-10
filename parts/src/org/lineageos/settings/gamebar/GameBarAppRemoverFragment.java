@@ -72,7 +72,9 @@ public class GameBarAppRemoverFragment extends Fragment {
             @Override
             public void onAppRemove(ApplicationInfo appInfo) {
                 removeAppFromAutoList(appInfo.packageName);
-                Toast.makeText(getContext(), appInfo.loadLabel(packageManager) + " removed.", Toast.LENGTH_SHORT).show();
+                Toast.makeText(getContext(), 
+                    String.format("%s %s", appInfo.loadLabel(packageManager), getString(R.string.game_bar_app_removed_toast)), 
+                    Toast.LENGTH_SHORT).show();
                 autoAppsList.remove(appInfo);
                 adapter.notifyDataSetChanged();
             }
