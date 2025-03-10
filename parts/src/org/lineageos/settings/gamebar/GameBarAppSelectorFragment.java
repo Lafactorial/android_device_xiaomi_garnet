@@ -76,7 +76,9 @@ public class GameBarAppSelectorFragment extends Fragment {
             @Override
             public void onAppClick(ApplicationInfo appInfo) {
                 addAppToAutoList(appInfo.packageName);
-                Toast.makeText(getContext(), appInfo.loadLabel(packageManager) + " added.", Toast.LENGTH_SHORT).show();
+                Toast.makeText(getContext(), 
+                    String.format("%s %s", appInfo.loadLabel(packageManager), getString(R.string.game_bar_app_added_toast)), 
+                    Toast.LENGTH_SHORT).show();
                 allApps.remove(appInfo);
                 adapter.notifyDataSetChanged();
             }
