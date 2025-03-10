@@ -15,70 +15,73 @@
      limitations under the License.
 -->
 <resources>
+    <!-- Doze Brightness -->
     <string-array name="doze_brightness_level">
         <item>@string/doze_brightness_low</item>
         <item>@string/doze_brightness_high</item>
         <item>@string/doze_brightness_adaptive</item>
     </string-array>
-    <string-array name="doze_brightness_level_mode">
+    <string-array name="doze_brightness_level_mode" translatable="false">
         <item>0</item>
         <item>1</item>
         <item>2</item>
     </string-array>
 
+    <!-- Game Packages -->
     <string-array name="game_packages">
-         <item>com.proximabeta.mf.uamo</item>
-         <item>com.dts.freefiremax</item>
-         <item>com.dts.freefireth</item>
-         <item>com.mobile.legends</item>
-         <item>com.tencent.KiHan</item>
-         <item>com.tencent.tmgp.cf</item>
-         <item>com.tencent.tmgp.cod</item>
-         <item>com.tencent.tmgp.gnyx</item>
-         <item>com.ea.gp.apexlegendsmobilefps</item>
-         <item>com.levelinfinite.hotta.gp</item>
-         <item>com.supercell.brawlstars</item>
-         <item>com.supercell.clashofclans</item>
-         <item>com.vng.mlbbvn</item>
-         <item>com.levelinfinite.sgameGlobal</item>
-         <item>com.tencent.tmgp.sgame</item>
-         <item>com.YoStar.AetherGazer</item>
-         <item>com.netease.lztgglobal</item>
-         <item>com.riotgames.league.wildrift</item>
-         <item>com.riotgames.league.wildrifttw</item>
-         <item>com.riotgames.league.wildriftvn</item>
-         <item>com.epicgames.fortnite</item>
-         <item>com.epicgames.portal</item>
-         <item>com.tencent.lolm</item>
-         <item>jp.konami.pesam</item>
-         <item>com.ea.gp.fifamobile</item>
-         <item>com.pearlabyss.blackdesertm.gl</item>
-         <item>com.pearlabyss.blackdesertm</item>
-         <item>com.gameloft.android.ANMP.GloftA9HM</item>
-         <item>com.madfingergames.legends</item>
-         <item>com.riotgames.league.teamfighttactics</item>
-         <item>com.riotgames.league.teamfighttacticstw</item>
-         <item>com.riotgames.league.teamfighttacticsvn</item>
-         <item>com.pubg.imobile</item>
-         <item>com.pubg.krmobile</item>
-         <item>com.rekoo.pubgm</item>
-         <item>com.tencent.ig</item>
-         <item>com.tencent.tmgp.pubgmhd</item>
-         <item>com.vng.pubgmobile</item>
-         <item>com.activision.callofduty.shooter</item>
-         <item>com.garena.game.codm</item>
-         <item>com.tencent.tmgp.kr.codm</item>
-         <item>com.vng.codmvn</item>
-         <item>com.miHoYo.GenshinImpact</item>
-         <item>com.kurogame.wutheringwaves</item>
-     </string-array>
+        <item>com.proximabeta.mf.uamo</item>
+        <item>com.dts.freefiremax</item>
+        <item>com.dts.freefireth</item>
+        <item>com.mobile.legends</item>
+        <item>com.tencent.KiHan</item>
+        <item>com.tencent.tmgp.cf</item>
+        <item>com.tencent.tmgp.cod</item>
+        <item>com.tencent.tmgp.gnyx</item>
+        <item>com.ea.gp.apexlegendsmobilefps</item>
+        <item>com.levelinfinite.hotta.gp</item>
+        <item>com.supercell.brawlstars</item>
+        <item>com.supercell.clashofclans</item>
+        <item>com.vng.mlbbvn</item>
+        <item>com.levelinfinite.sgameGlobal</item>
+        <item>com.tencent.tmgp.sgame</item>
+        <item>com.YoStar.AetherGazer</item>
+        <item>com.netease.lztgglobal</item>
+        <item>com.riotgames.league.wildrift</item>
+        <item>com.riotgames.league.wildrifttw</item>
+        <item>com.riotgames.league.wildriftvn</item>
+        <item>com.epicgames.fortnite</item>
+        <item>com.epicgames.portal</item>
+        <item>com.tencent.lolm</item>
+        <item>jp.konami.pesam</item>
+        <item>com.ea.gp.fifamobile</item>
+        <item>com.pearlabyss.blackdesertm.gl</item>
+        <item>com.pearlabyss.blackdesertm</item>
+        <item>com.gameloft.android.ANMP.GloftA9HM</item>
+        <item>com.madfingergames.legends</item>
+        <item>com.riotgames.league.teamfighttactics</item>
+        <item>com.riotgames.league.teamfighttacticstw</item>
+        <item>com.riotgames.league.teamfighttacticsvn</item>
+        <item>com.pubg.imobile</item>
+        <item>com.pubg.krmobile</item>
+        <item>com.rekoo.pubgm</item>
+        <item>com.tencent.ig</item>
+        <item>com.tencent.tmgp.pubgmhd</item>
+        <item>com.vng.pubgmobile</item>
+        <item>com.activision.callofduty.shooter</item>
+        <item>com.garena.game.codm</item>
+        <item>com.tencent.tmgp.kr.codm</item>
+        <item>com.vng.codmvn</item>
+        <item>com.miHoYo.GenshinImpact</item>
+        <item>com.kurogame.wutheringwaves</item>
+    </string-array>
 
-    <!-- FPS Overlay -->
+    <!-- FPS Method -->
     <string-array name="game_bar_fps_method_entries">
         <item>New API (Default)</item>
         <item>Legacy Sysfs</item>
     </string-array>
-    <string-array name="game_bar_fps_method_values">
+
+    <string-array name="game_bar_fps_method_values" translatable="false">
         <item>new</item>
         <item>legacy</item>
     </string-array>
@@ -90,7 +93,8 @@
         <item>Every 2 seconds</item>
         <item>Every 5 seconds</item>
     </string-array>
-    <string-array name="fps_overlay_update_interval_values">
+
+    <string-array name="fps_overlay_update_interval_values" translatable="false">
         <item>500</item>
         <item>1000</item>
         <item>2000</item>
@@ -107,7 +111,8 @@
         <item>Bottom Right</item>
         <item>Custom Draggable</item>
     </string-array>
-    <string-array name="fps_overlay_position_values">
+
+    <string-array name="fps_overlay_position_values" translatable="false">
         <item>top_left</item>
         <item>top_center</item>
         <item>top_right</item>
@@ -117,7 +122,7 @@
         <item>draggable</item>
     </string-array>
 
-    <!-- Overlay color -->
+    <!-- Overlay Color -->
     <string-array name="fps_overlay_color_entries">
         <item>White</item>
         <item>Crimson</item>
@@ -129,7 +134,7 @@
         <item>Magenta</item>
     </string-array>
 
-    <string-array name="fps_overlay_color_values">
+    <string-array name="fps_overlay_color_values" translatable="false">
         <item>#FFFFFF</item>
         <item>#DC143C</item>
         <item>#4CAF50</item>
@@ -140,12 +145,13 @@
         <item>#FF1493</item>
     </string-array>
 
-    <!-- Overlay format -->
+    <!-- Overlay Format -->
     <string-array name="game_bar_format_entries">
         <item>Full</item>
         <item>Minimal</item>
     </string-array>
-    <string-array name="game_bar_format_values">
+
+    <string-array name="game_bar_format_values" translatable="false">
         <item>full</item>
         <item>minimal</item>
     </string-array>
@@ -155,19 +161,21 @@
         <item>Side-by-Side</item>
         <item>Stacked</item>
     </string-array>
-    <string-array name="game_bar_split_mode_values">
+
+    <string-array name="game_bar_split_mode_values" translatable="false">
         <item>side_by_side</item>
         <item>stacked</item>
     </string-array>
 
-    <!-- Long press timeouts -->
+    <!-- Long Press Timeout -->
     <string-array name="game_bar_longpress_entries">
         <item>0.5 second</item>
         <item>1 second</item>
         <item>3 seconds</item>
         <item>5 seconds</item>
     </string-array>
-    <string-array name="game_bar_longpress_values">
+
+    <string-array name="game_bar_longpress_values" translatable="false">
         <item>500</item>
         <item>1000</item>
         <item>3000</item>
@@ -193,9 +201,9 @@
         <item>439000000</item>
         <item>515000000</item>
         <item>580000000</item>
-        </string-array>
+    </string-array>
 
-<!-- CPU Little Cluster Frequencies -->
+    <!-- CPU Little Cluster Frequencies -->
     <string-array name="cpu_little_freq_entries" translatable="false">
         <item>300MHz</item>
         <item>441MHz</item>
@@ -212,6 +220,7 @@
         <item>1670MHz</item>
         <item>1804MHz</item>
     </string-array>
+
     <string-array name="cpu_little_freq_values" translatable="false">
         <item>300000</item>
         <item>441600</item>
@@ -229,7 +238,7 @@
         <item>1804800</item>
     </string-array>
 
-<!-- CPU Big Cluster Frequencies -->
+    <!-- CPU Big Cluster Frequencies -->
     <string-array name="cpu_big_freq_entries" translatable="false">
         <item>633MHz</item>
         <item>768MHz</item>
@@ -249,6 +258,7 @@
         <item>2342MHz</item>
         <item>2496MHz</item>
     </string-array>
+
     <string-array name="cpu_big_freq_values" translatable="false">
         <item>633600</item>
         <item>768000</item>
@@ -268,7 +278,7 @@
         <item>2342400</item>
         <item>2496000</item>
     </string-array>
- 
+
     <!-- CPU Prime Cluster Frequencies -->
     <string-array name="cpu_prime_freq_entries" translatable="false">
         <item>787MHz</item>
@@ -291,6 +301,7 @@
         <item>2822MHz</item>
         <item>2918MHz</item>
     </string-array>
+
     <string-array name="cpu_prime_freq_values" translatable="false">
         <item>787200</item>
         <item>921600</item>
@@ -312,37 +323,38 @@
         <item>2822400</item>
         <item>2918400</item>
     </string-array>
- 
+
     <!-- CPU Governor Options (for all clusters) -->
-    <string-array name="cpu_governor_entries" translatable="false">
-         <item>walt</item>
-         <item>conservative</item>
-         <item>powersave</item>
-         <item>performance</item>
-         <item>schedutil</item>
+    <string-array name="cpu_governor_entries">
+        <item>walt</item>
+        <item>conservative</item>
+        <item>powersave</item>
+        <item>performance</item>
+        <item>schedutil</item>
     </string-array>
+
     <string-array name="cpu_governor_values" translatable="false">
-         <item>walt</item>
-         <item>conservative</item>
-         <item>powersave</item>
-         <item>performance</item>
-         <item>schedutil</item>
+        <item>walt</item>
+        <item>conservative</item>
+        <item>powersave</item>
+        <item>performance</item>
+        <item>schedutil</item>
     </string-array>
 
     <!-- Power Profile Modes -->
-    <string-array name="power_profile_modes" translatable="false">
-         <item>Balanced</item>
-         <item>Gaming</item>
-         <item>Performance</item>
-         <item>Battery Saver</item>
-         <item>Unknown</item>
+    <string-array name="power_profile_modes">
+        <item>Balanced</item>
+        <item>Gaming</item>
+        <item>Performance</item>
+        <item>Battery Saver</item>
+        <item>Unknown</item>
     </string-array>
+    
     <string-array name="power_profile_mode_values" translatable="false">
-         <item>0</item>
-         <item>1</item>
-         <item>2</item>
-         <item>3</item>
-         <item>4</item>
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
     </string-array>
-
 </resources>
