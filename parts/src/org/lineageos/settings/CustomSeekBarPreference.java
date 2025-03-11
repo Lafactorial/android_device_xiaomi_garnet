@@ -17,9 +17,12 @@
 package org.lineageos.settings;
 
 import android.content.Context;
+import android.content.res.Configuration;
 import android.content.res.TypedArray;
 import android.graphics.PorterDuff;
+import androidx.core.content.ContextCompat;
 import androidx.core.content.res.TypedArrayUtils;
+import androidx.appcompat.app.AppCompatDelegate;
 import androidx.preference.*;
 import android.util.AttributeSet;
 import android.util.Log;
@@ -135,8 +138,7 @@ public class CustomSeekBarPreference extends Preference implements SeekBar.OnSee
     @Override
     public void onBindViewHolder(PreferenceViewHolder holder) {
         super.onBindViewHolder(holder);
-        try
-        {
+        try {
             // move our seekbar to the new view we've been given
             ViewParent oldContainer = mSeekBar.getParent();
             ViewGroup newContainer = (ViewGroup) holder.findViewById(R.id.seekbar);
@@ -249,24 +251,52 @@ public class CustomSeekBarPreference extends Preference implements SeekBar.OnSee
                 mResetImageView.setVisibility(View.VISIBLE);
         }
         if (mMinusImageView != null) {
+            int uiMode = getContext().getResources().getConfiguration().uiMode;
+            int nightMode = uiMode & Configuration.UI_MODE_NIGHT_MASK;
+            TypedArray a = getContext().obtainStyledAttributes(new int[] {
+                android.R.attr.colorControlNormal
+            });
+            int activeColor = a.getColor(0, ContextCompat.getColor(getContext(), android.R.color.black));
+            a.recycle();
+            TypedArray alphaArray = getContext().obtainStyledAttributes(new int[] {
+                android.R.attr.disabledAlpha
+            });
+            float disabledAlpha = alphaArray.getFloat(0, 0.3f);
+            alphaArray.recycle();
             if (mValue == mMinValue || mTrackingTouch) {
                 mMinusImageView.setClickable(false);
-                mMinusImageView.setColorFilter(getContext().getColor(R.color.disabled_text_color),
-                    PorterDuff.Mode.MULTIPLY);
+                mMinusImageView.setColorFilter(applyAlpha(activeColor, disabledAlpha), PorterDuff.Mode.MULTIPLY);
             } else {
                 mMinusImageView.setClickable(true);
-                mMinusImageView.clearColorFilter();
+                mMinusImageView.setColorFilter(activeColor, PorterDuff.Mode.SRC_IN);
             }
         }
         if (mPlusImageView != null) {
+            int uiMode = getContext().getResources().getConfiguration().uiMode;
+            int nightMode = uiMode & Configuration.UI_MODE_NIGHT_MASK;
+            TypedArray a = getContext().obtainStyledAttributes(new int[] {
+                android.R.attr.colorControlNormal
+            });
+            int activeColor = a.getColor(0, ContextCompat.getColor(getContext(), android.R.color.black));
+            a.recycle();
+            TypedArray alphaArray = getContext().obtainStyledAttributes(new int[] {
+                android.R.attr.disabledAlpha
+            });
+            float disabledAlpha = alphaArray.getFloat(0, 0.3f);
+            alphaArray.recycle();
             if (mValue == mMaxValue || mTrackingTouch) {
                 mPlusImageView.setClickable(false);
-                mPlusImageView.setColorFilter(getContext().getColor(R.color.disabled_text_color), PorterDuff.Mode.MULTIPLY);
+                mPlusImageView.setColorFilter(applyAlpha(activeColor, disabledAlpha), PorterDuff.Mode.MULTIPLY);
             } else {
                 mPlusImageView.setClickable(true);
-                mPlusImageView.clearColorFilter();
+                mPlusImageView.setColorFilter(activeColor, PorterDuff.Mode.SRC_IN);
             }
         }
+    }
+
+    private int applyAlpha(int color, float alpha) {
+        int alphaInt = Math.round(alpha * 255);
+        return (color & 0x00FFFFFF) | (alphaInt << 24);
     }
 
     protected void changeValue(int newValue) {
@@ -296,8 +326,8 @@ public class CustomSeekBarPreference extends Preference implements SeekBar.OnSee
 
     @Override
     public void onStartTrackingTouch(SeekBar seekBar) {
-        mTrackingValue = mValue;
         mTrackingTouch = true;
+        mTrackingValue = mValue;
     }
 
     @Override
