@@ -1,0 +1,417 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     Copyright (C) 2020 The LineageOS Project
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+
+    <!-- Xiaomi Settings -->
+    <string name="app_title">Configurações Xiaomi</string>
+    <string name="tile_add">Adicionar tile</string>
+    <string name="tile_added">Tile adicionado</string>
+    <string name="tile_not_added">Tile não adicionado</string>
+    <string name="tile_already_added">Tile já adicionado</string>
+    <string name="tile_on">Ligado</string>
+    <string name="tile_off">Desligado</string>
+ 
+    <!-- Thermal Profiles -->
+    <string name="thermal_title">Perfil Térmico por Aplicativo</string>
+    <string name="thermal_enable">Usar perfis térmicos por aplicativo</string>
+    <string name="thermal_summary">Ajuste perfis térmicos por aplicativo para um desempenho ideal</string>
+    <string name="thermal_default">Padrão</string>
+    <string name="thermal_benchmark">Benchmark</string>
+    <string name="thermal_browser">Navegador</string>
+    <string name="thermal_camera">Câmera</string>
+    <string name="thermal_dialer">Discador</string>
+    <string name="thermal_gaming">Jogos</string>
+    <string name="thermal_navigation">Navegação</string>
+    <string name="thermal_streaming">Streaming</string>
+    <string name="thermal_video">Vídeo</string>
+
+    <!-- Thermal Tile Strings -->
+    <string name="thermal_tile_label">Perfil Térmico por Aplicativo</string>
+    <string name="thermal_tile_enabled_subtitle">Ativado</string>
+    <string name="thermal_tile_disabled_subtitle">Desativado</string>
+
+    <!-- Clear Speaker -->
+   <string name="clear_speaker_title">Limpar alto-falante</string>
+   <string name="clear_speaker_summary">Reproduz um áudio de 30 segundos para limpar o alto-falante</string>
+   <string name="clear_speaker_description">Execute este recurso uma ou duas vezes se achar que seu alto-falante está levemente obstruído por poeira. Ajuste o volume de mídia para o máximo.\n\nSe o alto-falante estiver muito obstruído, execute este recurso 2-5 vezes enquanto sacode o dispositivo com o alto-falante virado para baixo.</string>
+
+    <!-- Saturation -->
+    <string name="saturation_title">Saturação da Tela</string>
+    <string name="saturation_summary">Controla o nível de saturação da tela</string>
+    <string name="saturation_footer_summary">Alterar o modo de cor nas configurações de tela substituirá o nível de saturação, exigindo que seja reaplicado.</string>
+
+    <!-- Image preview -->
+    <string name="image_preview_content_description">Visualização</string>
+    <string name="image_preview_next_page_content_description">Próximo</string>
+    <string name="image_preview_previous_page_content_description">Anterior</string>
+
+    <!-- Custom seekbar -->
+    <string name="custom_seekbar_value">Valor: <xliff:g id="v">%s</xliff:g></string>
+    <string name="custom_seekbar_default_value">padrão</string>
+    <string name="custom_seekbar_default_value_to_set">Valor padrão: <xliff:g id="v">%s</xliff:g>\nToque longo para definir</string>
+    <string name="custom_seekbar_default_value_is_set">Valor padrão definido</string>
+    
+    <!-- Auto HBM -->
+    <string name="auto_hbm_title">Modo de Alto Brilho Automático (HBM)</string>
+    <string name="auto_hbm_main_switch_title">Usar HBM automático</string>
+    <string name="tile_auto_hbm">HBM Auto</string>
+    <string name="tile_hbm_on">Ativado</string>
+    <string name="tile_hbm_off">Desativado</string>
+    <string name="tile_hbm">HBM</string>
+    <string name="tile_hbm_unavailable">HBM Indisponível</string>
+    <string name="tile_auto_hbm_or_brightness_enabled">HBM Auto ou Brilho Automático ativado</string>
+    <string name="hbm_mode_title">Modo de Alto Brilho</string>
+    <string name="hbm_mode_notification">O Modo de Alto Brilho foi ativado. O uso prolongado pode danificar sua tela.</string>
+    <string name="auto_hbm_summary">Ativa automaticamente o modo de alto brilho baseado na intensidade da luz solar (lux)</string>
+    <string name="auto_hbm_threshold_title">Limite de luz</string>
+    <string name="auto_hbm_threshold_summary">Define o limite de intensidade luminosa em unidades lux para ativar o HBM</string>
+    <string name="auto_hbm_enable_time_title">Tempo de ativação</string>
+    <string name="auto_hbm_enable_time_summary">Duração em segundos que o limite de luz deve ser atingido para ativar o HBM</string>
+    <string name="auto_hbm_disable_time_title">Tempo de desativação</string>
+    <string name="auto_hbm_disable_time_summary">Duração em segundos para desativar o HBM se a luz ficar abaixo do limite</string>
+
+    <!-- GameBar Main -->
+    <string name="game_bar_title">GameBar</string>
+    <string name="game_bar_summary">Ativar sobreposição do sistema (FPS, Temp, etc.)</string>
+    <string name="game_bar_tile_label">GameBar</string>
+    <string name="game_bar_tile_description">Ativar/desativar a sobreposição de jogos</string>
+    <string name="game_bar_enable_title">Ativar Sobreposição GameBar</string>
+
+    <!-- Overlay Permissions -->
+    <string name="overlay_permission_required">Permissão de sobreposição necessária</string>
+    <string name="overlay_permission_granted">Permissão de sobreposição concedida</string>
+    <string name="overlay_permission_denied">Permissão de sobreposição negada</string>
+
+    <!-- Overlay Features -->
+    <string name="overlay_features_title">Recursos de Sobreposição</string>
+    <string name="game_bar_fps_enable_title">Exibir FPS</string>
+    <string name="game_bar_fps_enable_summary">Mostra a taxa de quadros por segundo atual na tela</string>
+    <string name="game_bar_temp_enable_title">Temperatura do Dispositivo</string>
+    <string name="game_bar_temp_enable_summary">Mostra a temperatura da bateria do dispositivo</string>
+    <string name="game_bar_cpu_usage_enable_title">Uso da CPU</string>
+    <string name="game_bar_cpu_usage_enable_summary">Mostra a porcentagem de uso atual da CPU</string>
+    <string name="game_bar_cpu_clock_enable_title">Frequência da CPU</string>
+    <string name="game_bar_cpu_clock_enable_summary">Mostra a frequência atual de cada núcleo da CPU</string>
+    <string name="game_bar_cpu_temp_enable_title">Temperatura da CPU</string>
+    <string name="game_bar_cpu_temp_enable_summary">Mostra a temperatura da CPU (zona térmica 0)</string>
+    <string name="game_bar_ram_enable_title">Uso de RAM</string>
+    <string name="game_bar_ram_enable_summary">Mostra o uso atual de memória RAM em MB</string>
+    <string name="game_bar_gpu_usage_enable_title">Uso da GPU</string>
+    <string name="game_bar_gpu_usage_enable_summary">Mostra a porcentagem de uso atual da GPU</string>
+    <string name="game_bar_gpu_clock_enable_title">Frequência da GPU</string>
+    <string name="game_bar_gpu_clock_enable_summary">Mostra a frequência atual da GPU</string>
+    <string name="game_bar_gpu_temp_enable_title">Temperatura da GPU</string>
+    <string name="game_bar_gpu_temp_enable_summary">Mostra a temperatura atual da GPU</string>
+
+    <!-- FPS Measurement Method -->
+    <string name="fps_measurement_method_title">Método de Medição de FPS</string>
+    <string name="game_bar_fps_method_title">Selecionar Método de FPS</string>
+    <string name="game_bar_fps_method_summary">Escolha entre o método da Nova API (padrão) ou Sysfs Legado</string>
+
+    <!-- Customization -->
+    <string name="customization_title">Personalização</string>
+    <string name="game_bar_text_size_title">Tamanho do Texto</string>
+    <string name="game_bar_text_size_summary">Ajuste o tamanho do texto na sobreposição</string>
+    <string name="game_bar_background_alpha_title">Transparência do Fundo</string>
+    <string name="game_bar_background_alpha_summary">Ajuste a transparência do fundo da sobreposição</string>
+    <string name="game_bar_corner_radius_title">Arredondamento dos Cantos</string>
+    <string name="game_bar_corner_radius_summary">Ajuste o grau de arredondamento dos cantos da sobreposição</string>
+    <string name="game_bar_padding_title">Espaçamento Interno</string>
+    <string name="game_bar_padding_summary">Ajuste o espaço ao redor das informações exibidas</string>
+    <string name="game_bar_item_spacing_title">Espaçamento entre Itens</string>
+    <string name="game_bar_item_spacing_summary">Ajuste o espaço entre as linhas da sobreposição</string>
+    <string name="game_bar_update_interval_title">Intervalo de Atualização</string>
+    <string name="game_bar_update_interval_summary">Defina a frequência de atualização dos dados exibidos</string>
+    <string name="game_bar_title_color_title">Cor dos Títulos</string>
+    <string name="game_bar_title_color_summary">Escolha a cor para textos como \'FPS\', \'Temperatura\', \'CPU\', etc.</string>
+    <string name="game_bar_value_color_title">Cor dos Valores</string>
+    <string name="game_bar_value_color_summary">Escolha a cor para valores numéricos (ex.: \'29\', \'32.0°C\')</string>
+    <string name="game_bar_position_title">Posição da Sobreposição</string>
+    <string name="game_bar_position_summary">Selecione onde a sobreposição será exibida na tela</string>
+    <string name="game_bar_format_title">Formato da Sobreposição</string>
+    <string name="game_bar_format_summary">Escolha entre exibição completa ou compacta</string>
+    <string name="game_bar_overlay_format_toast">Formato da sobreposição alterado para: %s</string>
+    <string name="game_bar_format_entries_full">Completo</string>
+    <string name="game_bar_format_entries_minimal">Compacto</string>
+
+    <!-- Split Config -->
+    <string name="split_config_title">Configuração de Divisão</string>
+    <string name="game_bar_split_mode_title">Modo de Divisão</string>
+    <string name="game_bar_split_mode_summary">Escolha entre exibição lado a lado ou empilhada</string>
+
+    <!-- Overlay Gesture Controls -->
+    <string name="overlay_gesture_controls_title">Controles por Gestos</string>
+    <string name="game_bar_single_tap_toggle_title">Ativar Toque Único</string>
+    <string name="game_bar_single_tap_toggle_summary">Toque uma vez para alternar entre os formatos completo e compacto</string>
+    <string name="game_bar_doubletap_capture_title">Ativar Toque Duplo</string>
+    <string name="game_bar_doubletap_capture_summary">Toque duas vezes para iniciar ou parar a captura de logs</string>
+    <string name="game_bar_longpress_enable_title">Ativar Pressão Longa</string>
+    <string name="game_bar_longpress_enable_summary">Pressione longamente para acessar as configurações do GameBar</string>
+    <string name="game_bar_longpress_timeout_title">Duração da Pressão Longa</string>
+    <string name="game_bar_longpress_timeout_summary">Defina o tempo necessário para a pressão longa na sobreposição</string>
+
+    <!-- Capture Logs -->
+    <string name="capture_logs_title">Captura de Logs</string>
+    <string name="game_bar_capture_start_title">Iniciar Captura</string>
+    <string name="game_bar_capture_start_summary">Comece a capturar dados de FPS e desempenho em tempo real</string>
+    <string name="game_bar_capture_stop_title">Parar Captura</string>
+    <string name="game_bar_capture_stop_summary">Pare a captura de dados de FPS e desempenho</string>
+    <string name="game_bar_capture_export_title">Exportar Logs do GameBar</string>
+    <string name="game_bar_capture_export_summary">Salve os dados capturados de FPS e desempenho em um arquivo CSV</string>
+    <string name="game_bar_capture_start_toast">Captura de dados iniciada</string>
+    <string name="game_bar_capture_stop_toast">Captura de dados finalizada</string>
+    <string name="game_bar_capture_export_toast">Dados de log exportados para arquivo</string>
+    <string name="game_bar_doubletap_capture_start_toast">Captura iniciada</string>
+    <string name="game_bar_doubletap_capture_stop_toast">Captura finalizada</string>
+
+    <!-- Auto Enable GameBar -->
+    <string name="auto_enable_gamebar_title">Ativação Automática do GameBar</string>
+    <string name="game_bar_auto_enable_title">Ativar GameBar Automaticamente para Apps Selecionados</string>
+    <string name="game_bar_auto_enable_summary">Quando ativado, apps selecionados abrirão o GameBar automaticamente, mesmo se a opção principal estiver desativada</string>
+    <string name="game_bar_app_selector_title">Adicionar Aplicativos</string>
+    <string name="game_bar_app_selector_summary">Escolha quais aplicativos ativarão o GameBar automaticamente</string>
+    <string name="game_bar_app_remover_title">Remover Aplicativos Selecionados</string>
+    <string name="game_bar_app_remover_summary">Remova aplicativos da lista de ativação automática</string>
+    <string name="game_bar_app_remover_activity_title">Remover Aplicativos de Ativação Automática</string>
+    <string name="game_bar_app_selector_activity_title">Adicionar Aplicativos de ativação Automática</string>
+    <string name="game_bar_app_added_toast">adicionado</string>
+    <string name="game_bar_app_removed_toast">removido</string>
+
+    <!-- FPS Method -->
+    <string-array name="game_bar_fps_method_entries">
+        <item>Nova API (Padrão)</item>
+        <item>Sysfs Legado</item>
+    </string-array>
+    
+    <string-array name="game_bar_fps_method_values" translatable="false">
+        <item>new</item>
+        <item>legacy</item>
+    </string-array>
+
+    <!-- Update Interval -->
+    <string-array name="fps_overlay_update_interval_entries">
+        <item>A cada 500ms</item>
+        <item>A cada segundo</item>
+        <item>A cada 2 segundos</item>
+        <item>A cada 5 segundos</item>
+    </string-array>
+
+    <string-array name="fps_overlay_update_interval_values" translatable="false">
+        <item>500</item>
+        <item>1000</item>
+        <item>2000</item>
+        <item>5000</item>
+    </string-array>
+
+    <!-- Position -->
+    <string-array name="fps_overlay_position_entries">
+        <item>Superior Esquerdo</item>
+        <item>Superior Central</item>
+        <item>Superior Direito</item>
+        <item>Inferior Esquerdo</item>
+        <item>Inferior Central</item>
+        <item>Inferior Direito</item>
+        <item>Arrastável Personalizado</item>
+    </string-array>
+
+    <string-array name="fps_overlay_position_values" translatable="false">
+        <item>top_left</item>
+        <item>top_center</item>
+        <item>top_right</item>
+        <item>bottom_left</item>
+        <item>bottom_center</item>
+        <item>bottom_right</item>
+        <item>draggable</item>
+    </string-array>
+
+    <!-- Overlay Color -->
+    <string-array name="fps_overlay_color_entries">
+        <item>Branco</item>
+        <item>Carmesim</item>
+        <item>Salada de Frutas</item>
+        <item>Azul Real</item>
+        <item>Âmbar</item>
+        <item>Turquesa</item>
+        <item>Violeta Elétrico</item>
+        <item>Magenta</item>
+    </string-array>
+
+    <string-array name="fps_overlay_color_values" translatable="false">
+        <item>#FFFFFF</item>
+        <item>#DC143C</item>
+        <item>#4CAF50</item>
+        <item>#4169E1</item>
+        <item>#FFBF00</item>
+        <item>#008080</item>
+        <item>#8A2BE2</item>
+        <item>#FF1493</item>
+    </string-array>
+
+    <!-- Overlay Format -->
+    <string-array name="game_bar_format_entries">
+        <item>Completo</item>
+        <item>Compacto</item>
+    </string-array>
+
+    <string-array name="game_bar_format_values" translatable="false">
+        <item>full</item>
+        <item>minimal</item>
+    </string-array>
+
+    <!-- Split Mode -->
+    <string-array name="game_bar_split_mode_entries">
+        <item>Lado a Lado</item>
+        <item>Empilhado</item>
+    </string-array>
+
+    <string-array name="game_bar_split_mode_values" translatable="false">
+        <item>side_by_side</item>
+        <item>stacked</item>
+    </string-array>
+
+    <!-- Long Press Timeout -->
+    <string-array name="game_bar_longpress_entries">
+        <item>0,5 segundo</item>
+        <item>1 segundo</item>
+        <item>3 segundos</item>
+        <item>5 segundos</item>
+    </string-array>
+
+    <string-array name="game_bar_longpress_values" translatable="false">
+        <item>500</item>
+        <item>1000</item>
+        <item>3000</item>
+        <item>5000</item>
+    </string-array>
+
+    <!-- Powertools Main Title -->
+    <string name="Powertools_title">Desempenho e Energia</string>
+    <string name="Powertools_summary">Personalize perfis de energia, frequências CPU/GPU e configurações para desempenho e eficiência otimizados</string>
+
+    <!-- Power Profile Strings -->
+    <string name="powerprofile_tile_label">Perfil de Energia</string>
+    <string name="powerprofile_mode_balance">Equilibrado</string>
+    <string name="powerprofile_mode_performance">Desempenho</string>
+    <string name="powerprofile_mode_battery_saver">Economia de Bateria</string>
+    <string name="powerprofile_mode_gaming">Jogos</string>
+    <string name="powerprofile_mode_unknown">Modo Desconhecido</string>
+    <string name="powerprofile_tile_disabled_subtitle">Desativado (Perfis térmicos por app ativos)</string>
+    <string name="perf_mode_title">Modo Alto Desempenho</string>
+    <string name="perf_mode_notification">Modo Alto Desempenho ativado para melhor performance.</string>
+    <string name="gaming_mode_title">Modo Jogos</string>
+    <string name="gaming_mode_notification">Modo Jogos ativado para performance ideal.</string>
+    <string name="power_profile_footer_summary">Nota: Frequências mais altas estão disponíveis apenas no Modo Jogos.</string>
+    <string name="power_profile_mode_title">Selecionar Perfil de Energia</string>
+    <string name="power_profile_mode_summary">%s</string>
+    <string name="power_profile_applied">Perfil de energia aplicado com sucesso para %1$s</string>
+
+    <!-- GPU Optimizer Section -->
+    <string name="gpu_enable_title">Ativar Otimização GPU</string>
+    <string name="gpu_enable_summary">Ativa otimizações da GPU</string>
+    <string name="gpu_freq_category_title">Configurar Frequência GPU</string>
+    <string name="gpu_min_frequency">Frequência Mínima GPU</string>
+    <string name="gpu_max_frequency">Frequência Máxima GPU</string>
+    <string name="gpu_disabled_defaults_restored">Otimização da GPU desativada, padrões restaurados</string>
+    <string name="gpu_optimizer_enabled">Otimização GPU ativada</string>
+    <string name="gpu_min_freq_exceeds_max">Falha: Frequência mínima não pode exceder a máxima</string>
+    <string name="gpu_max_freq_below_min">Falha: Frequência máxima não pode ser menor que a mínima</string>
+    <string name="gpu_min_freq_applied">Frequência mínima GPU -> %1$s</string>
+    <string name="gpu_max_freq_applied">Frequência máxima GPU -> %1$s</string>
+
+    <!-- CPU Optimizer Section -->
+    <string name="cpu_enable_title">Ativar Otimização CPU</string>
+    <string name="cpu_enable_summary">Ativa otimizações da CPU</string>
+    <string name="cpu_optimizer_disabled_defaults_restored">Otimização CPU desativada, padrões restaurados</string>
+    <string name="cpu_optimizer_enabled">Otimização CPU ativada</string>
+
+    <!-- CPU Little Cluster -->
+    <string name="cpu_little_category_title">Configurar Cluster Little CPU</string>
+    <string name="cpu_little_min_frequency_title">Frequência Mínima</string>
+    <string name="cpu_little_min_frequency_summary">%s</string>
+    <string name="cpu_little_max_frequency_title">Frequência Máxima</string>
+    <string name="cpu_little_max_frequency_summary">%s</string>
+    <string name="cpu_little_governor_title">Governador</string>
+    <string name="cpu_little_governor_summary">%s</string>
+    <string name="cpu_little_min_freq_exceeds_max">Falha: Frequência mínima não pode exceder a máxima</string>
+    <string name="cpu_little_max_freq_below_min">Falha: Frequência máxima não pode ser menor que a mínima</string>
+    <string name="cpu_little_min_freq_applied">Frequência mínima Little CPU -> %1$s</string>
+    <string name="cpu_little_max_freq_applied">Frequência máxima Little CPU -> %1$s</string>
+    <string name="cpu_little_governor_applied">Governador Little CPU -> %1$s</string>
+
+    <!-- CPU Big Cluster -->
+    <string name="cpu_big_category_title">Configurar Cluster Big CPU</string>
+    <string name="cpu_big_min_frequency_title">Frequência Mínima</string>
+    <string name="cpu_big_min_frequency_summary">%s</string>
+    <string name="cpu_big_max_frequency_title">Frequência Máxima</string>
+    <string name="cpu_big_max_frequency_summary">%s</string>
+    <string name="cpu_big_governor_title">Governador</string>
+    <string name="cpu_big_governor_summary">%s</string>
+    <string name="cpu_big_min_freq_exceeds_max">Falha: Frequência mínima não pode exceder a máxima</string>
+    <string name="cpu_big_max_freq_below_min">Falha: Frequência máxima não pode ser menor que a mínima</string>
+    <string name="cpu_big_min_freq_applied">Frequência mínima Big CPU -> %1$s</string>
+    <string name="cpu_big_max_freq_applied">Frequência máxima Big CPU -> %1$s</string>
+    <string name="cpu_big_governor_applied">Governador Big CPU -> %1$s</string>
+
+    <!-- CPU Prime Cluster -->
+    <string name="cpu_prime_category_title">Configurar Cluster Prime CPU</string>
+    <string name="cpu_prime_min_frequency_title">Frequência Mínima</string>
+    <string name="cpu_prime_min_frequency_summary">%s</string>
+    <string name="cpu_prime_max_frequency_title">Frequência Máxima</string>
+    <string name="cpu_prime_max_frequency_summary">%s</string>
+    <string name="cpu_prime_governor_title">Governador</string>
+    <string name="cpu_prime_governor_summary">%s</string>
+    <string name="cpu_prime_min_freq_exceeds_max">Falha: Frequência mínima não pode exceder a máxima</string>
+    <string name="cpu_prime_max_freq_below_min">Falha: Frequência máxima não pode ser menor que a mínima</string>
+    <string name="cpu_prime_min_freq_applied">Frequência mínima Prime CPU -> %1$s</string>
+    <string name="cpu_prime_max_freq_applied">Frequência máxima Prime CPU -> %1$s</string>
+    <string name="cpu_prime_governor_applied">Governador Prime CPU -> %1$s</string>
+    
+    <!-- Power Profile -->
+    <string-array name="power_profile_modes">
+        <item>Equilibrado</item>
+        <item>Jogos</item>
+        <item>Desempenho</item>
+        <item>Economia de Bateria</item>
+        <item>Desconhecido</item>
+    </string-array>
+
+    <string-array name="power_profile_mode_values" translatable="false">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+    </string-array>
+
+    <!-- CPU Governor Options (for all clusters) -->
+    <string-array name="cpu_governor_entries">
+        <item>walt</item>
+        <item>conservative</item>
+        <item>powersave</item>
+        <item>performance</item>
+        <item>schedutil</item>
+    </string-array>
+
+    <string-array name="cpu_governor_values" translatable="false">
+        <item>walt</item>
+        <item>conservative</item>
+        <item>powersave</item>
+        <item>performance</item>
+        <item>schedutil</item>
+    </string-array>
+
+</resources>
