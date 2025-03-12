@@ -290,7 +290,7 @@
         <item>3 seconds</item>
         <item>5 seconds</item>
     </string-array>
-    
+
     <string-array name="game_bar_longpress_values" translatable="false">
         <item>500</item>
         <item>1000</item>
