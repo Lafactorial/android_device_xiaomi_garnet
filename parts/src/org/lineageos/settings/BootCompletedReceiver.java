@@ -30,7 +30,6 @@ import android.os.UserHandle;
 import android.provider.Settings;
 import android.util.Log;
 
-import org.lineageos.settings.doze.DozeUtils;
 import org.lineageos.settings.powertools.PowerProfileTileService;
 import org.lineageos.settings.thermal.ThermalUtils;
 import org.lineageos.settings.thermal.ThermalTileService;
@@ -45,9 +44,6 @@ public class BootCompletedReceiver extends BroadcastReceiver {
         if (!intent.getAction().equals(Intent.ACTION_LOCKED_BOOT_COMPLETED)) {
             return;
         }
-
-        Log.i(TAG, "Boot completed, starting services");
-        DozeUtils.onBootCompleted(context);
 
         // Start Thermal Management Services
         ThermalUtils.getInstance(context).startService();
