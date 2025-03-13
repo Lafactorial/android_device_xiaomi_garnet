@@ -28,6 +28,10 @@ import androidx.preference.PreferenceManager;
 
 import org.lineageos.settings.R;
 
+/**
+ * Quick Settings Tile for managing power profiles.
+ * Allows toggling between power modes and displays the current mode.
+ */
 public class PowerProfileTileService extends TileService {
     private static final String TAG = "PowerProfileTileService";
     private PowerProfileUtil mManager;
@@ -74,47 +78,59 @@ public class PowerProfileTileService extends TileService {
         updateTile();
     }
 
+    /**
+     * Updates the QS Tile based on the current power profile mode.
+     * Sets the state, icon, label, and subtitle according to the mode.
+     */
     private void updateTile() {
         Tile tile = getQsTile();
-        if (tile != null) {
-            int currentMode = mManager.getManagedMode();
-            switch (currentMode) {
-                case PowerProfileUtil.MODE_GAMING:
-                    tile.setState(Tile.STATE_ACTIVE);
-                    tile.setIcon(Icon.createWithResource(this, R.drawable.ic_thermal_gaming));
-                    break;
-                case PowerProfileUtil.MODE_PERFORMANCE:
-                    tile.setState(Tile.STATE_ACTIVE);
-                    tile.setIcon(Icon.createWithResource(this, R.drawable.ic_thermal_performance));
-                    break;
-                case PowerProfileUtil.MODE_BALANCE:
-                    tile.setState(Tile.STATE_INACTIVE);
-                    tile.setIcon(Icon.createWithResource(this, R.drawable.ic_thermal_balance));
-                    break;
-                case PowerProfileUtil.MODE_BATTERY_SAVER:
-                    tile.setState(Tile.STATE_INACTIVE);
-                    tile.setIcon(Icon.createWithResource(this, R.drawable.ic_thermal_battery_saver));
-                    break;
-                default:
-                    tile.setState(Tile.STATE_INACTIVE);
-                    tile.setIcon(Icon.createWithResource(this, R.drawable.ic_thermal_balance));
-                    break;
-            }
-            tile.setLabel(getString(R.string.powerprofile_tile_label));
-            tile.setSubtitle(mManager.getModeLabel());
-            tile.updateTile();
+        if (tile == null) {
+            Log.e(TAG, "QS Tile is null, cannot update");
+            return;
         }
+        int currentMode = mManager.getManagedMode();
+        switch (currentMode) {
+            case PowerProfileUtil.MODE_GAMING:
+                tile.setState(Tile.STATE_ACTIVE);
+                tile.setIcon(Icon.createWithResource(this, R.drawable.ic_thermal_gaming));
+                break;
+            case PowerProfileUtil.MODE_PERFORMANCE:
+                tile.setState(Tile.STATE_ACTIVE);
+                tile.setIcon(Icon.createWithResource(this, R.drawable.ic_thermal_performance));
+                break;
+            case PowerProfileUtil.MODE_BALANCE:
+                tile.setState(Tile.STATE_INACTIVE);
+                tile.setIcon(Icon.createWithResource(this, R.drawable.ic_thermal_balance));
+                break;
+            case PowerProfileUtil.MODE_BATTERY_SAVER:
+                tile.setState(Tile.STATE_INACTIVE);
+                tile.setIcon(Icon.createWithResource(this, R.drawable.ic_thermal_battery_saver));
+                break;
+            default:
+                Log.w(TAG, "Unexpected mode: " + currentMode);
+                tile.setState(Tile.STATE_INACTIVE);
+                tile.setIcon(Icon.createWithResource(this, R.drawable.ic_thermal_balance));
+                break;
+        }
+        tile.setLabel(getString(R.string.powerprofile_tile_label));
+        tile.setSubtitle(mManager.getModeLabel());
+        tile.updateTile();
     }
 
+    /**
+     * Updates the QS Tile to disabled state when per-app thermal profiles are enabled.
+     */
     private void updateTileDisabled() {
         Tile tile = getQsTile();
-        if (tile != null) {
-            tile.setState(Tile.STATE_UNAVAILABLE);
-            tile.setIcon(Icon.createWithResource(this, R.drawable.ic_thermal_balance));
-            tile.setLabel(getString(R.string.powerprofile_tile_label));
-            tile.setSubtitle(getString(R.string.powerprofile_tile_disabled_subtitle));
-            tile.updateTile();
+        if (tile == null) {
+            Log.e(TAG, "QS Tile is null, cannot update");
+            return;
         }
+        tile.setState(Tile.STATE_UNAVAILABLE);
+        tile.setIcon(Icon.createWithResource(this, R.drawable.ic_thermal_balance));
+        tile.setLabel(getString(R.string.powerprofile_tile_label));
+        tile.setSubtitle(getString(R.string.powerprofile_tile_disabled_subtitle));
+        tile.updateTile();
     }
 
     @Override
