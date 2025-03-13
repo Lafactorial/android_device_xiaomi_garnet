@@ -308,7 +308,6 @@
     <string name="powerprofile_mode_performance">Desempenho</string>
     <string name="powerprofile_mode_battery_saver">Economia de Bateria</string>
     <string name="powerprofile_mode_gaming">Jogos</string>
-    <string name="powerprofile_mode_unknown">Modo Desconhecido</string>
     <string name="powerprofile_tile_disabled_subtitle">Desativado (Perfis térmicos por app ativos)</string>
     <string name="perf_mode_title">Modo Alto Desempenho</string>
     <string name="perf_mode_notification">Modo Alto Desempenho ativado para melhor performance.</string>
@@ -386,7 +385,6 @@
         <item>Jogos</item>
         <item>Desempenho</item>
         <item>Economia de Bateria</item>
-        <item>Desconhecido</item>
     </string-array>
 
     <string-array name="power_profile_mode_values" translatable="false">
@@ -394,7 +392,6 @@
         <item>1</item>
         <item>2</item>
         <item>3</item>
-        <item>4</item>
     </string-array>
 
     <!-- CPU Governor Options (for all clusters) -->

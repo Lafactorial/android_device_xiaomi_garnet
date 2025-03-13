@@ -305,19 +305,21 @@
     <!-- Power Profile Strings -->
     <string name="powerprofile_tile_label">Power Profile</string>
     <string name="powerprofile_mode_balance">Balanced</string>
+    <string name="powerprofile_mode_gaming">Gaming</string>
     <string name="powerprofile_mode_performance">Performance</string>
     <string name="powerprofile_mode_battery_saver">Battery Saver</string>
-    <string name="powerprofile_mode_gaming">Gaming</string>
-    <string name="powerprofile_mode_unknown">Unknown Mode</string>
     <string name="powerprofile_tile_disabled_subtitle">Disabled (Per-app thermal profiles enabled)</string>
     <string name="perf_mode_title">High Performance Mode</string>
     <string name="perf_mode_notification">High Performance Mode is now activated for enhanced performance.</string>
     <string name="gaming_mode_title">Game Boost</string>
     <string name="gaming_mode_notification">Game Boost Mode is now activated for optimal gaming performance.</string>
+    <string name="balance_mode_notification">Device is in Balanced mode for optimal performance and battery life.</string>
+    <string name="battery_saver_mode_notification">Device is in Battery Saver mode for extended battery life.</string>
     <string name="power_profile_footer_summary">Note: Higher frequencies are available only in Game Boost mode.</string>
     <string name="power_profile_mode_title">Select Power Profile Mode</string>
     <string name="power_profile_mode_summary">%s</string>
     <string name="power_profile_applied">Applied successfully power profile to %1$s</string>
+    <string name="thermal_mode_changed">Thermal mode changed to %1$s: %2$b</string>
 
     <!-- GPU Optimizer Section -->
     <string name="gpu_enable_title">Enable GPU Optimizer</string>
@@ -386,7 +388,6 @@
         <item>Gaming</item>
         <item>Performance</item>
         <item>Battery Saver</item>
-        <item>Unknown</item>
     </string-array>
 
     <string-array name="power_profile_mode_values" translatable="false">
@@ -394,7 +395,6 @@
         <item>1</item>
         <item>2</item>
         <item>3</item>
-        <item>4</item>
     </string-array>
 
     <!-- CPU Governor Options (for all clusters) -->
