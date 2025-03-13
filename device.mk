@@ -113,6 +113,8 @@ PRODUCT_PACKAGES += \
 $(call soong_config_set, ufsbsg, ufsframework, bsg)
 
 # Camera
+$(call soong_config_set,camera,override_format_from_reserved,true)
+
 PRODUCT_PACKAGES += \
     libcamera2ndk_vendor
 
