@@ -120,6 +120,8 @@ PRODUCT_PACKAGES += \
     android.hardware.boot-service.qti.recovery
 
 # Camera
+$(call soong_config_set,camera,override_format_from_reserved,true)
+
 PRODUCT_PACKAGES += \
     libcamera2ndk_vendor
 
