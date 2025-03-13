@@ -128,6 +128,8 @@ PRODUCT_PACKAGES += \
     android.hardware.boot-service.qti.recovery
 
 # Camera
+$(call soong_config_set,camera,override_format_from_reserved,true)
+
 PRODUCT_PACKAGES += \
     android.hardware.camera.provider@2.7.vendor \
     vendor.qti.hardware.camera.postproc@1.0.vendor
