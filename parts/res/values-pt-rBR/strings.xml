@@ -298,28 +298,28 @@
         <item>5000</item>
     </string-array>
 
-    <!-- Powertools Main Title -->
-    <string name="Powertools_title">Desempenho e Energia</string>
-    <string name="Powertools_summary">Personalize perfis de energia, frequências de CPU/GPU e configurações para desempenho e eficiência otimizados</string>
+    <!-- PowerMode Main Title -->
+    <string name="Powertools_title">Modo de Energia</string>
+    <string name="Powertools_summary">Domine seu dispositivo! Ajuste perfis, CPU/GPU e configurações para desempenho máximo e economia ideal.</string>
 
     <!-- Power Profile Strings -->
-    <string name="powerprofile_tile_label">Perfil de Energia</string>
-    <string name="powerprofile_mode_balance">Balanceado</string>
-    <string name="powerprofile_mode_gaming">Jogos</string>
-    <string name="powerprofile_mode_performance">Desempenho</string>
+    <string name="powerprofile_tile_label">Modo de Energia</string>
+    <string name="powerprofile_mode_balance">Equilibrado</string>
+    <string name="powerprofile_mode_gaming">Gamer</string>
+    <string name="powerprofile_mode_performance">Benchmark</string>
     <string name="powerprofile_mode_battery_saver">Economia de Bateria</string>
-    <string name="powerprofile_tile_disabled_subtitle">Desativa (Perfis térmicos por app ativos)</string>
-    <string name="perf_mode_title">Modo de Desempenho</string>
-    <string name="perf_mode_notification">O Modo de Desempenho está ativo para melhor desempenho.</string>
-    <string name="gaming_mode_title">Modo de Jogos</string>
-    <string name="gaming_mode_notification">O Modo de Jogos está ativo para melhor desempenho em jogos.</string>
-    <string name="balance_mode_notification">O dispositivo está no modo Balanceado para melhor desempenho e duração da bateria.</string>
-    <string name="battery_saver_mode_notification">O dispositivo está no modo Economia de Bateria para maior duração da bateria.</string>
-    <string name="power_profile_footer_summary">Nota: Frequências mais altas estão disponíveis apenas no modo de Jogos.</string>
-    <string name="power_profile_mode_title">Selecionar Modo de Perfil de Energia</string>
+    <string name="powerprofile_tile_disabled_subtitle">Indisponível (Perfis térmicos por app ativados)</string>
+    <string name="perf_mode_title">Modo Benchmark</string>
+    <string name="perf_mode_notification">Modo Benchmark ativado! Potência máxima para tarefas exigentes.</string>
+    <string name="gaming_mode_title">Modo Gamer</string>
+    <string name="gaming_mode_notification">Modo Gamer ativado! Gráficos suaves e resposta rápida para jogos.</string>
+    <string name="balance_mode_notification">Modo Equilibrado ativado! Otimizado para desempenho diário e duração da bateria.</string>
+    <string name="battery_saver_mode_notification">Modo Economia de Bateria ativado! Prolongue a bateria com economia inteligente.</string>
+    <string name="power_profile_footer_summary">Nota: As frequências máximas são exclusivas do Modo Gamer para jogos intensos.</string>
+    <string name="power_profile_mode_title">Escolha o Modo de Energia</string>
     <string name="power_profile_mode_summary">%s</string>
-    <string name="power_profile_applied">Perfil de energia aplicado com sucesso para %1$s</string>
-    <string name="thermal_mode_changed">Modo térmico alterado para %1$s: %2$b</string>
+    <string name="power_profile_applied">Modo de energia %1$s aplicado com sucesso!</string>
+    <string name="thermal_mode_changed">Modo térmico definido para %1$s: %2$b</string>
 
     <!-- GPU Optimizer Section -->
     <string name="gpu_enable_title">Ativar Otimização GPU</string>
@@ -384,9 +384,9 @@
     
     <!-- Power Profile -->
     <string-array name="power_profile_modes">
-        <item>Balanceado</item>
-        <item>Jogos</item>
-        <item>Desempenho</item>
+        <item>Equilibrado</item>
+        <item>Gamer</item>
+        <item>Benchmark</item>
         <item>Economia de Bateria</item>
     </string-array>
 
