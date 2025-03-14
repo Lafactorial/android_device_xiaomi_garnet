@@ -29,18 +29,23 @@ import android.os.IBinder;
 import android.os.UserHandle;
 import android.provider.Settings;
 import android.util.Log;
+import android.view.Display;
+import android.view.Display.HdrCapabilities;
 
 import org.lineageos.settings.powertools.PowerProfileTileService;
 import org.lineageos.settings.thermal.ThermalUtils;
 import org.lineageos.settings.thermal.ThermalTileService;
 
 public class BootCompletedReceiver extends BroadcastReceiver {
-    private static final boolean DEBUG = false;
+    private static final boolean DEBUG = true;
     private static final String TAG = "XiaomiParts";
 
     @Override
     public void onReceive(final Context context, Intent intent) {
-        Log.d(TAG, "Received intent: " + intent.getAction());
+        if (DEBUG) {
+            Log.d(TAG, "Received intent: " + intent.getAction());
+        }
+
         if (!intent.getAction().equals(Intent.ACTION_LOCKED_BOOT_COMPLETED)) {
             return;
         }
@@ -51,5 +56,25 @@ public class BootCompletedReceiver extends BroadcastReceiver {
 
         // Start Power Profile Tile Service
         context.startServiceAsUser(new Intent(context, PowerProfileTileService.class), UserHandle.CURRENT);
+
+        // Enable HDR support
+        try {
+            final DisplayManager displayManager = context.getSystemService(DisplayManager.class);
+            if (displayManager != null) {
+                displayManager.overrideHdrTypes(Display.DEFAULT_DISPLAY,
+                        new int[] {
+                            HdrCapabilities.HDR_TYPE_HDR10,
+                            HdrCapabilities.HDR_TYPE_HLG,
+                            HdrCapabilities.HDR_TYPE_HDR10_PLUS
+                        });
+                if (DEBUG) {
+                    Log.d(TAG, "HDR types overridden successfully: HDR10, HLG, HDR10+");
+                }
+            } else {
+                Log.e(TAG, "DisplayManager is null, cannot override HDR types");
+            }
+        } catch (Exception e) {
+            Log.e(TAG, "Failed to override HDR types", e);
+        }
     }
 }
