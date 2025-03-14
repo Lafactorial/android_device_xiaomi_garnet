@@ -25,10 +25,6 @@ android_app {
         "org.lineageos.settings.resources",
     ],
 
-    optimize: {
-        proguard_flags_files: ["proguard.flags"],
-    },
-
     required: [
         "privapp_whitelist_org.lineageos.settings.xml",
     ],
