@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     Copyright (C) 2020 The LineageOS Project
+
+     Licenciado sob a Licença Apache, Versão 2.0 (a "Licença");
+     você não pode usar este arquivo exceto em conformidade com a Licença.
+     Você pode obter uma cópia da Licença em
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     A menos que exigido por lei aplicável ou acordado por escrito, software
+     distribuído sob a Licença é distribuído "COMO ESTÁ",
+     SEM GARANTIAS OU CONDIÇÕES DE QUALQUER TIPO, expressas ou implícitas.
+     Consulte a Licença para o idioma específico que rege as permissões e
+     limitações sob a Licença.
+-->
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+
+    <!-- Configurações Xiaomi -->
+    <string name="app_title">Configurações Xiaomi</string>
+    <string name="tile_add">Adicionar atalho</string>
+    <string name="tile_added">Atalho adicionado</string>
+    <string name="tile_not_added">Atalho não adicionado</string>
+    <string name="tile_already_added">Atalho já adicionado</string>
+    <string name="tile_on">Ligado</string>
+    <string name="tile_off">Desligado</string>
+ 
+    <!-- Perfis térmicos -->
+    <string name="thermal_title">Perfis térmicos</string>
+    <string name="thermal_summary">Ajuste perfis térmicos por aplicativo para um desempenho ideal</string>
+    <string name="thermal_default">Sem otimização</string>
+    <string name="thermal_benchmark">Desempenho</string>
+    <string name="thermal_browser">Navegador</string>
+    <string name="thermal_camera">Câmera</string>
+    <string name="thermal_dialer">Discador</string>
+    <string name="thermal_gaming">Jogos</string>
+    <string name="thermal_navigation">Navegação</string>
+    <string name="thermal_streaming">Streaming</string>
+    <string name="thermal_video">Vídeos</string>
+
+    <!-- Textos do Atalho Térmico -->
+    <string name="thermal_tile_label">Modo Térmico</string>
+    <string name="thermal_mode_default">Modo Padrão</string>
+    <string name="thermal_mode_performance">Modo Desempenho</string>
+    <string name="thermal_mode_battery_saver">Modo Economia</string>
+    <string name="thermal_mode_gaming">Modo Jogos</string>
+
+    <!-- Saturação -->
+    <string name="saturation_title">Saturação da Tela</string>
+    <string name="saturation_summary">Controle o nível de saturação da tela</string>
+    <string name="saturation_footer_summary">Alterar o modo de cor nas configurações de tela substituirá o nível de saturação, exigindo que seja reaplicado.</string>
+
+    <!-- Pré-visualização de imagem -->
+    <string name="image_preview_content_description">Pré-visualização</string>
+    <string name="image_preview_next_page_content_description">Próximo</string>
+    <string name="image_preview_previous_page_content_description">Anterior</string>
+
+    <!-- Barra de progresso personalizada -->
+    <string name="custom_seekbar_value">Valor: <xliff:g id="v">%s</xliff:g></string>
+    <string name="custom_seekbar_default_value">padrão</string>
+    <string name="custom_seekbar_default_value_to_set">Valor padrão: <xliff:g id="v">%s</xliff:g>\nToque longo para definir</string>
+    <string name="custom_seekbar_default_value_is_set">Valor padrão definido</string>
+    
+    <!-- HBM Automático -->
+    <string name="auto_hbm_title">Modo de Alto Brilho Automático (HBM)</string>
+    <string name="auto_hbm_main_switch_title">Usar HBM automático</string>
+    <string name="tile_auto_hbm">HBM Auto</string>
+    <string name="tile_hbm_on">Ativado</string>
+    <string name="tile_hbm_off">Desativado</string>
+    <string name="tile_hbm">HBM</string>
+    <string name="tile_hbm_unavailable">HBM Indisponível</string>
+    <string name="tile_auto_hbm_or_brightness_enabled">HBM Auto ou Brilho Automático ativado</string>
+    <string name="hbm_mode_title">Modo de Alto Brilho</string>
+    <string name="hbm_mode_notification">Modo de Alto Brilho ativado. Uso prolongado pode danificar sua tela.</string>
+    <string name="auto_hbm_summary">Ativar automaticamente o modo de alto brilho baseado na intensidade da luz solar (lux)</string>
+    <string name="auto_hbm_threshold_title">Limite de luz</string>
+    <string name="auto_hbm_threshold_summary">Defina o limite de intensidade luminosa em unidades lux para ativar o HBM</string>
+    <string name="auto_hbm_enable_time_title">Tempo de ativação</string>
+    <string name="auto_hbm_enable_time_summary">Duração em segundos que o limite de luz deve ser mantido para ativar o HBM</string>
+    <string name="auto_hbm_disable_time_title">Tempo de desativação</string>
+    <string name="auto_hbm_disable_time_summary">Duração em segundos para desativar o HBM quando a luz ficar abaixo do limite definido</string>    
+</resources>
