@@ -144,10 +144,10 @@ public class GameBar {
                 if (mDoubleTapCaptureEnabled) {
                     if (GameDataExport.getInstance().isCapturing()) {
                         GameDataExport.getInstance().stopCapture();
-                        Toast.makeText(mContext, "Capture Stopped", Toast.LENGTH_SHORT).show();
+                        Toast.makeText(mContext, mContext.getString(R.string.capture_stopped), Toast.LENGTH_SHORT).show();
                     } else {
                         GameDataExport.getInstance().startCapture();
-                        Toast.makeText(mContext, "Capture Started", Toast.LENGTH_SHORT).show();
+                        Toast.makeText(mContext, mContext.getString(R.string.capture_started), Toast.LENGTH_SHORT).show();
                     }
                     return true;
                 }
@@ -162,7 +162,7 @@ public class GameBar {
                         .edit()
                         .putString("game_bar_format", mOverlayFormat)
                         .apply();
-                    Toast.makeText(mContext, "Overlay Format: " + mOverlayFormat, Toast.LENGTH_SHORT).show();
+                    Toast.makeText(mContext, mContext.getString(R.string.overlay_format_prefix, mOverlayFormat), Toast.LENGTH_SHORT).show();
                     updateStats();
                     return true;
                 }
