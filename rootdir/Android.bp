@@ -17,6 +17,12 @@ prebuilt_etc {
     vendor: true,
 }
 
+sh_binary {
+    name: "init.qcom.early_boot.sh",
+    src: "etc/init.qcom.early_boot.sh",
+    vendor: true,
+}
+
 prebuilt_etc {
     name: "init.recovery.qcom.rc",
     src: "etc/init.recovery.qcom.rc",
