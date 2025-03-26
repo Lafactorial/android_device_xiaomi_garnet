@@ -578,8 +578,5 @@ PRODUCT_PACKAGES += \
     libnl \
     libwfdaac_vendor
 
-PRODUCT_BOOT_JARS += \
-    WfdCommon
-
 # Vendor
 $(call inherit-product, vendor/xiaomi/garnet/garnet-vendor.mk)
