@@ -156,6 +156,7 @@ PRODUCT_USE_DYNAMIC_PARTITIONS := true
 
 # Euicc
 PRODUCT_PACKAGES += \
+    XiaomiEsimSwitcher \
     XiaomiEuicc
 
 # Fastbootd
