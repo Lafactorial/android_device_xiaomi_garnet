@@ -57,6 +57,7 @@ PRODUCT_PACKAGES += \
     audio.usb.default
 
 PRODUCT_PACKAGES += \
+    libaudioroute-v34 \
     libbatterylistener \
     libfmpal \
     libqcompostprocbundle \
