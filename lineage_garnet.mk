@@ -23,7 +23,7 @@ TARGET_FACE_UNLOCK_SUPPORTED := true
 EVO_BUILD_TYPE := Unofficial
 TARGET_BOOT_ANIMATION_RES := 1080
 TARGET_BUILD_APERTURE_CAMERA := false
-TARGET_USES_PICO_GAPPS := true
+TARGET_USES_MINI_GAPPS := true
 
 # Device identifier. This must come after all inclusions
 PRODUCT_NAME := lineage_garnet
