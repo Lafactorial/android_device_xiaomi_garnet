@@ -10,4 +10,10 @@ echo 'Cloning Camera Stuff'
 rm -rf device/xiaomi/miuicamera-garnet && git clone https://codeberg.org/lafactorial/device_xiaomi_miuicamera-garnet.git -b lineage-22.2 device/xiaomi/miuicamera-garnet
 rm -rf vendor/xiaomi/miuicamera-garnet && git clone https://codeberg.org/lafactorial/vendor_xiaomi_miuicamera-garnet.git -b lineage-22.2 vendor/xiaomi/miuicamera-garnet
 
+# Hals
+rm -rf hardware/qcom-caf/sm8450/audio/graphservices && git clone https://github.com/LineageOS/android_vendor_qcom_opensource_audioreach-graphservices.git -b linega-23.0-caf-sm8450 hardware/qcom-caf/sm8450/audio/graphservices
+rm -rf hardware/qcom-caf/sm8450/audio/agm && git clone https://github.com/LineageOS/android_vendor_qcom_opensource_agm -b linega-23.0-caf-sm8450 hardware/qcom-caf/sm8450/audio/agm
+rm -rf hardware/qcom-caf/sm8450/audio/primary-hal && git clone https://github.com/LineageOS/android_hardware_qcom_audio-ar -b linega-23.0-caf-sm8450 hardware/qcom-caf/sm8450/audio/primary-hal
+rm -rf hardware/qcom-caf/sm8450/audio/pal && git clone https://github.com/LineageOS/android_vendor_qcom_opensource_arpal-lx -b linega-23.0-caf-sm8450 hardware/qcom-caf/sm8450/audio/pal
+
 echo 'Cloning process is completed, now its time for lunch'
