@@ -1,0 +1,301 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     Copyright (C) 2020 The LineageOS Project
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+
+    <!-- Xiaomi Settings -->
+    <string name="app_title">Xiaomi Seçenekleri</string>
+    <string name="tile_add">Kare ekle</string>
+    <string name="tile_added">Kare eklendi</string>
+    <string name="tile_not_added">Kare eklenmedi</string>
+    <string name="tile_already_added">Kare çoktan eklendi</string>
+    <string name="tile_on">Açık</string>
+    <string name="tile_off">Kapalı</string>
+ 
+    <!-- Thermal Profiles -->
+    <string name="thermal_title">Termal profil</string>
+    <string name="thermal_summary">En iyi performans için uygulama başına termal profil ayarlayın</string>
+    <string name="thermal_default">Varsayılan</string>
+    <string name="thermal_benchmark">Performans</string>
+    <string name="thermal_browser">Tarayıcı</string>
+    <string name="thermal_camera">Kamera</string>
+    <string name="thermal_dialer">Arama</string>
+    <string name="thermal_gaming">Oyun</string>
+    <string name="thermal_navigation">Konum</string>
+    <string name="thermal_streaming">Yayın</string>
+    <string name="thermal_video">Video</string>
+
+    <!-- Thermal Tile Strings -->
+    <string name="thermal_tile_label">Termal Mod</string>
+    <string name="thermal_mode_default">Varsayılan Mod</string>
+    <string name="thermal_mode_performance">Performans Modu</string>
+    <string name="thermal_mode_battery_saver">Pil tasarrufu Modu</string>
+    <string name="thermal_mode_gaming">Oyun Modu</string>
+
+    <!-- Saturation -->
+    <string name="saturation_title">Ekran doygunluğu</string>
+    <string name="saturation_summary">Ekranın doygunluk seviyesini ayarlayın</string>
+    <string name="saturation_footer_summary">Ekran ayarlarındaki renk modunu değiştirmek doygunluk seviyesini geçersiz kılar, yeniden uygulanması gerekir.</string>
+
+    <!-- Image preview -->
+    <string name="image_preview_content_description">Önizleme</string>
+    <string name="image_preview_next_page_content_description">Sonraki</string>
+    <string name="image_preview_previous_page_content_description">Önceki</string>
+
+    <!-- Custom seekbar -->
+    <string name="custom_seekbar_value">Değer: <xliff:g id="v">%s</xliff:g></string>
+    <string name="custom_seekbar_default_value">varsayılan olarak</string>
+    <string name="custom_seekbar_default_value_to_set">Varsayılan değer: <xliff:g id="v">%s</xliff:g>\nAyarlamak için basılı tut</string>
+    <string name="custom_seekbar_default_value_is_set">Varsayılan değer ayarlandı</string>
+    
+    <!-- Auto HBM -->
+    <string name="auto_hbm_title">Yüksek Parlaklık Modu(YPM)</string>
+    <string name="auto_hbm_main_switch_title">YPM kullan</string>
+    <string name="tile_auto_hbm">Otomatik YPM</string>
+    <string name="tile_hbm_on">Etkin</string>
+    <string name="tile_hbm_off">Devre dışı</string>
+    <string name="tile_hbm">YPM</string>
+    <string name="tile_hbm_unavailable">YPM kullanılamıyor</string>
+    <string name="tile_auto_hbm_or_brightness_enabled">Otomatik parlaklık etkin</string>
+    <string name="hbm_mode_title">Yüksek Parlaklık Modu</string>
+    <string name="hbm_mode_notification">Yüksek Parlaklık Modu şu anda etkinleştirildi. Uzun süreli kullanım ekranınıza zarar verebilir.</string>
+    <string name="auto_hbm_summary">Güneş ışığının yoğunluğuna bağlı olarak yüksek parlaklık modunu otomatik olarak etkinleştirir</string>
+    <string name="auto_hbm_threshold_title">Işık eşiği</string>
+    <string name="auto_hbm_threshold_summary">YPM aktif olacağı ışık eşiği yoğunluğunu lux birimi olarak belirtin</string>
+    <string name="auto_hbm_enable_time_title">Etkinleştirme süresi</string>
+    <string name="auto_hbm_enable_time_summary">YPM etkinleştirmek için gereken ışık eşiğinin saniye olarak devam etme süresi</string>
+    <string name="auto_hbm_disable_time_title">Devre dışı kalma süresi</string>
+    <string name="auto_hbm_disable_time_summary">YPM devre dışı kalması için saniye olarak ışık eşiğinin ayarlanan seviyenin altına düşme süresi</string>
+
+    <!-- General GameBar Strings -->
+    <!-- Used for general app descriptions or UI elements -->
+    <string name="game_bar_title">Oyun Arayüzü</string>
+    <string name="game_bar_summary">Arayüzü etkinleştir (FPS, Sıcaklık, vs.)</string>
+    <string name="game_bar_tile_label">Oyun Arayüzü</string>
+    <string name="game_bar_tile_description">Oyun arayüzünü değiştirin</string>
+
+    <!-- Overlay Permissions -->
+    <string name="overlay_permission_required">Arayüz izni gerekli</string>
+    <string name="overlay_permission_granted">Arayüz izni verildi</string>
+    <string name="overlay_permission_denied">Arayüz izni reddedildi</string>
+
+    <!-- Preference: Main Switch -->
+    <string name="game_bar_enable_title">Oyun Arayüzünü etkinleştir</string>
+
+    <!-- Overlay Features -->
+    <string name="overlay_features_title">Arayüz Özellikleri</string>
+    <string name="game_bar_fps_enable_title">FPS arayüzü</string>
+    <string name="game_bar_fps_enable_summary">Kare hızını göster</string>
+    <string name="game_bar_temp_enable_title">Sıcaklık</string>
+    <string name="game_bar_temp_enable_summary">Cihaz (pil) sıcaklığını göster</string>
+    <string name="game_bar_cpu_usage_enable_title">İşlemci</string>
+    <string name="game_bar_cpu_usage_enable_summary">İşlemcı kullanım yüzdesini göster</string>
+    <string name="game_bar_cpu_clock_enable_title">İşlemci hızı</string>
+    <string name="game_bar_cpu_clock_enable_summary">Her bir çekirdeğin hızını göster</string>
+    <string name="game_bar_cpu_temp_enable_title">İşlemci sıcaklığı</string>
+    <string name="game_bar_cpu_temp_enable_summary">İşlemci sıcaklığını göster</string>
+    <string name="game_bar_ram_enable_title">RAM kullanımı</string>
+    <string name="game_bar_ram_enable_summary">Bellek kullanımını göster</string>
+    <string name="game_bar_gpu_usage_enable_title">GPU kullanımı</string>
+    <string name="game_bar_gpu_usage_enable_summary">GPU kullanımını göster</string>
+    <string name="game_bar_gpu_clock_enable_title">GPU hızı</string>
+    <string name="game_bar_gpu_clock_enable_summary">GPU frekansını göster</string>
+    <string name="game_bar_gpu_temp_enable_title">GPU sıcaklığı</string>
+    <string name="game_bar_gpu_temp_enable_summary">GPU sıcaklığını göster</string>
+
+    <!-- FPS Measurement Method -->
+    <string name="fps_measurement_method_title">FPS Ölçme Metodu</string>
+    <string name="game_bar_fps_method_title">FPS Metodunu seç</string>
+    <string name="game_bar_fps_method_summary">Yeni API metodu (varsayılan) ve Legacy Sysfs metodu</string>
+
+    <!-- Preference Category: Customization -->
+    <string name="customization_title">Özelleştirme</string>
+    <string name="game_bar_text_size_title">Metin boyutu</string>
+    <string name="game_bar_text_size_summary">Arayüz metin boyutunu ayarlayın</string>
+    <string name="game_bar_background_alpha_title">Arkaplan şeffaflığı</string>
+    <string name="game_bar_background_alpha_summary">Arkaplan şeffaflığını ayarlayın</string>
+    <string name="game_bar_corner_radius_title">Köşe yarıçapı</string>
+    <string name="game_bar_corner_radius_summary">Arayüz köşe yuvarlaklığını ayarlayın</string>
+    <string name="game_bar_padding_title">Arayüz dolgusu</string>
+    <string name="game_bar_padding_summary">Arayüz etrafındaki boşluğu ayarlayın</string>
+    <string name="game_bar_item_spacing_title">Öğe aralığı</string>
+    <string name="game_bar_item_spacing_summary">Arayüz satır arası boşluğu ayarlayın</string>
+    <string name="game_bar_update_interval_title">Güncelleme aralığı</string>
+    <string name="game_bar_update_interval_summary">Arayüz değerlerinin güncelleme sıklığını ayarlayın</string>
+    <string name="game_bar_title_color_title">Başlık rengi</string>
+    <string name="game_bar_title_color_summary">\'FPS\', \'Sıcaklık\', \'İşlemci\', vs. yazı rengi</string>
+    <string name="game_bar_value_color_title">Değer rengi</string>
+    <string name="game_bar_value_color_summary">Numerik değer rengi (örn., \'29\', \'32.0°C\')</string>
+    <string name="game_bar_position_title">Arayüz konumu</string>
+    <string name="game_bar_position_summary">Ekrandaki arayüzün konumunu seç</string>
+    <string name="game_bar_format_title">Arayüz formatı</string>
+    <string name="game_bar_format_summary">Tam veya minimal görünüm arasında seçim yapın</string>
+
+    <!-- Split Config -->
+    <string name="split_config_title">Bölünmüş yapılandırma</string>
+    <string name="game_bar_split_mode_title">Bölme modu</string>
+    <string name="game_bar_split_mode_summary">Yan yana veya yığılmış modu seçin</string>
+
+    <!-- Overlay Gesture Controls -->
+    <string name="overlay_gesture_controls_title">Hareket kontrolleri</string>
+    <string name="game_bar_single_tap_toggle_title">Tek dokunmayı etkinleştir</string>
+    <string name="game_bar_single_tap_toggle_summary">Tam ve minimal arayüz formatı arasında geçiş yapmak için tek dokunun</string>
+    <string name="game_bar_doubletap_capture_title">Çift dokunmayı etkinleştir</string>
+    <string name="game_bar_doubletap_capture_summary">Kayıt almayı başlatmak/durdurmak için çift tıkla</string>
+    <string name="game_bar_longpress_enable_title">Uzun basmayı etkinleştir</string>
+    <string name="game_bar_longpress_enable_summary">Oyun arayüzü seçeneklerine erişmek için uzun basın</string>
+    <string name="game_bar_longpress_timeout_title">Uzun basma süresi</string>
+    <string name="game_bar_longpress_timeout_summary">Gerekli olan basılı tutma süresini ayarlayın</string>
+
+    <!-- Capture Logs -->
+    <string name="capture_logs_title">Kayıt al</string>
+    <string name="game_bar_capture_start_title">Kayda başla</string>
+    <string name="game_bar_capture_start_summary">Gerçek zamanlı FPS ve performans verisi kaydına başlayın</string>
+    <string name="game_bar_capture_stop_title">Kaydı durdur</string>
+    <string name="game_bar_capture_stop_summary">Gerçek zamanlı FPS ve performans verisi kaydını durdurun</string>
+    <string name="game_bar_capture_export_title">Oyun arayüzü kayıt bilgisini dışarı aktar</string>
+    <string name="game_bar_capture_export_summary">FPS ve performans verisini CVS dosyası olarak kaydedin</string>
+
+    <!-- Auto Enable GameBar -->
+    <string name="auto_enable_gamebar_title">Oyun arayüzünü oto. etkinleştir</string>
+    <string name="game_bar_auto_enable_title">Seçilen uygulamalar için oyun arayüzünü otomatik etkinleştir</string>
+    <string name="game_bar_auto_enable_summary">Açılırsa, seçilen uygulamalar oyun arayüzü kapalı olsa bile oyun arayüzünü otomatik olarak etkinleştirir</string>
+    <string name="game_bar_app_selector_title">Uyuglama seç</string>
+    <string name="game_bar_app_selector_summary">Oyun arayüzü otomatik etkinleştirilecek uygulama ekleyin</string>
+    <string name="game_bar_app_remover_title">Seçilen uygulamaları kaldır</string>
+    <string name="game_bar_app_remover_summary">Uyuglamaları otomatik etkinleştirme listesinden kaldır</string>
+
+    <!-- Activity Titles -->
+    <string name="game_bar_app_selector_activity_title">Oyun arayüzü için uygulama seç</string>
+    <string name="game_bar_app_remover_activity_title">Otomatik etkinleştirilen uygulamaları kaldır</string>
+
+    <!-- Toast Messages -->
+    <!-- Used for gesture-based capture actions -->
+    <string name="capture_started">Kayıt başladı</string>
+    <string name="capture_stopped">kayıt durdu</string>
+    <!-- Used for preference-based capture actions -->
+    <string name="capture_start_toast">Veri kaydetmeye başladı</string>
+    <string name="capture_stop_toast">Veri katdetme durdu</string>
+    <string name="capture_export_toast">Kayıt günlüğü dosyaya aktarıldı</string>
+    <!-- Used for overlay format toggle -->
+    <string name="overlay_format_prefix">Arayüz formatı: %s</string>
+    <!-- Used for app selection/removal -->
+    <string name="app_added_toast">%s eklendi.</string>
+    <string name="app_removed_toast">%s kaldırıldı.</string>
+
+    <!-- FPS Method -->
+    <string-array name="game_bar_fps_method_entries">
+        <item>Yeni API (Varsayılan)</item>
+        <item>Legacy Sysfs</item>
+    </string-array>
+     <string-array name="game_bar_fps_method_values">
+        <item>yeni</item>
+        <item>legacy</item>
+    </string-array>
+
+    <!-- Update Interval -->
+    <string-array name="fps_overlay_update_interval_entries">
+        <item>Her 500ms</item>
+        <item>Her saniye</item>
+        <item>Her 2 saniyede</item>
+        <item>Her 5 saniyede</item>
+    </string-array>
+    <string-array name="fps_overlay_update_interval_values">
+        <item>500</item>
+        <item>1000</item>
+        <item>2000</item>
+        <item>5000</item>
+    </string-array>
+
+    <!-- Array: Overlay Position -->
+    <string-array name="fps_overlay_position_entries">
+        <item>Sol üst</item>
+        <item>Üst orta</item>
+        <item>Sağ üst</item>
+        <item>Sol alt</item>
+        <item>Alt orta</item>
+        <item>Alt sağ</item>
+        <item>Özel sürüklenebilir</item>
+    </string-array>
+    <string-array name="fps_overlay_position_values">
+        <item>top_left</item>
+        <item>top_center</item>
+        <item>top_right</item>
+        <item>bottom_left</item>
+        <item>bottom_center</item>
+        <item>bottom_right</item>
+        <item>draggable</item>
+    </string-array>
+
+    <!-- Array: Overlay Color -->
+    <string-array name="fps_overlay_color_entries">
+        <item>White</item>
+        <item>Crimson</item>
+        <item>Fruit Salad</item>
+        <item>Royal Blue</item>
+        <item>Amber</item>
+        <item>Teal</item>
+        <item>Electric Violet</item>
+        <item>Magenta</item>
+    </string-array>
+
+    <string-array name="fps_overlay_color_values">
+        <item>#FFFFFF</item>
+        <item>#DC143C</item>
+        <item>#4CAF50</item>
+        <item>#4169E1</item>
+        <item>#FFBF00</item>
+        <item>#008080</item>
+        <item>#8A2BE2</item>
+        <item>#FF1493</item>
+    </string-array>
+
+    <!-- Array: Overlay Format -->
+    <string-array name="game_bar_format_entries">
+        <item>Tam</item>
+        <item>Minimal</item>
+    </string-array>
+    <string-array name="game_bar_format_values">
+        <item>tam</item>
+        <item>minimal</item>
+    </string-array>
+
+    <!-- Split Mode -->
+    <string-array name="game_bar_split_mode_entries">
+        <item>Yan yana</item>
+        <item>Yığılı</item>
+    </string-array>
+
+    <string-array name="game_bar_split_mode_values">
+        <item>side_by_side</item>
+        <item>stacked</item>
+    </string-array>
+
+    <!-- Long Press Timeout -->
+    <string-array name="game_bar_longpress_entries">
+        <item>0.5 saniye</item>
+        <item>1 saniye</item>
+        <item>3 saniye</item>
+        <item>5 saniye</item>
+    </string-array>
+    <string-array name="game_bar_longpress_values">
+        <item>500</item>
+        <item>1000</item>
+        <item>3000</item>
+        <item>5000</item>
+    </string-array>
+
+</resources>
