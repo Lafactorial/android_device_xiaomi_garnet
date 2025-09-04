@@ -117,12 +117,12 @@
     <string name="game_bar_gpu_temp_enable_summary">GPU sıcaklığını göster</string>
 
     <!-- FPS Measurement Method -->
-    <string name="fps_measurement_method_title">FPS Ölçme Metodu</string>
+    <string name="fps_measurement_method_category">FPS Ölçme Metodu</string>
     <string name="game_bar_fps_method_title">FPS Metodunu seç</string>
     <string name="game_bar_fps_method_summary">Yeni API metodu (varsayılan) ve Legacy Sysfs metodu</string>
 
     <!-- Preference Category: Customization -->
-    <string name="customization_title">Özelleştirme</string>
+    <string name="customization_category">Özelleştirme</string>
     <string name="game_bar_text_size_title">Metin boyutu</string>
     <string name="game_bar_text_size_summary">Arayüz metin boyutunu ayarlayın</string>
     <string name="game_bar_background_alpha_title">Arkaplan şeffaflığı</string>
@@ -145,12 +145,12 @@
     <string name="game_bar_format_summary">Tam veya minimal görünüm arasında seçim yapın</string>
 
     <!-- Split Config -->
-    <string name="split_config_title">Bölünmüş yapılandırma</string>
+    <string name="split_config_category">Bölünmüş yapılandırma</string>
     <string name="game_bar_split_mode_title">Bölme modu</string>
     <string name="game_bar_split_mode_summary">Yan yana veya yığılmış modu seçin</string>
 
     <!-- Overlay Gesture Controls -->
-    <string name="overlay_gesture_controls_title">Hareket kontrolleri</string>
+    <string name="overlay_gesture_controls_category">Hareket kontrolleri</string>
     <string name="game_bar_single_tap_toggle_title">Tek dokunmayı etkinleştir</string>
     <string name="game_bar_single_tap_toggle_summary">Tam ve minimal arayüz formatı arasında geçiş yapmak için tek dokunun</string>
     <string name="game_bar_doubletap_capture_title">Çift dokunmayı etkinleştir</string>
@@ -161,7 +161,7 @@
     <string name="game_bar_longpress_timeout_summary">Gerekli olan basılı tutma süresini ayarlayın</string>
 
     <!-- Capture Logs -->
-    <string name="capture_logs_title">Kayıt al</string>
+    <string name="capture_logs_category">Kayıt al</string>
     <string name="game_bar_capture_start_title">Kayda başla</string>
     <string name="game_bar_capture_start_summary">Gerçek zamanlı FPS ve performans verisi kaydına başlayın</string>
     <string name="game_bar_capture_stop_title">Kaydı durdur</string>
@@ -170,7 +170,7 @@
     <string name="game_bar_capture_export_summary">FPS ve performans verisini CVS dosyası olarak kaydedin</string>
 
     <!-- Auto Enable GameBar -->
-    <string name="auto_enable_gamebar_title">Oyun arayüzünü oto. etkinleştir</string>
+    <string name="auto_enable_gamebar_category">Oyun arayüzünü oto. etkinleştir</string>
     <string name="game_bar_auto_enable_title">Seçilen uygulamalar için oyun arayüzünü otomatik etkinleştir</string>
     <string name="game_bar_auto_enable_summary">Açılırsa, seçilen uygulamalar oyun arayüzü kapalı olsa bile oyun arayüzünü otomatik olarak etkinleştirir</string>
     <string name="game_bar_app_selector_title">Uyuglama seç</string>
