@@ -24,6 +24,17 @@ PRODUCT_MODEL := 2312DRA50G
 PRODUCT_SYSTEM_NAME := garnet_global
 PRODUCT_SYSTEM_DEVICE := garnet
 
+# risingOS-Flags
+WITH_GMS := true
+PRODUCT_NO_CAMERA := true
+TARGET_BOOT_ANIMATION_RES := 1080
+
+# Maintainer stuff
+RISING_MAINTAINER := HaKaN
+PRODUCT_BUILD_PROP_OVERRIDES += \
+    RisingMaintainer="HaKaN" \
+    RisingChipset="Snapdragon 7s Gen 2"
+
 PRODUCT_BUILD_PROP_OVERRIDES += \
     BuildDesc="garnet_global-user 15 AQ3A.240912.001 OS2.0.11.0.VNRMIXM release-keys" \
     BuildFingerprint=Redmi/garnet_global/garnet:15/AQ3A.240912.001/OS2.0.11.0.VNRMIXM:user/release-keys \
