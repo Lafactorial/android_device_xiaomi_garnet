@@ -119,8 +119,6 @@ PRODUCT_PACKAGES += \
     android.hardware.boot-service.qti \
     android.hardware.boot-service.qti.recovery
 
-$(call soong_config_set, ufsbsg, ufsframework, bsg)
-
 # Camera
 PRODUCT_PACKAGES += \
     libcamera2ndk_vendor
