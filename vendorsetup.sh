@@ -2,9 +2,9 @@ echo 'Starting to clone stuffs needed to build for garnet'
 
 # Kernel Stuff
 echo 'Cloning Kernel Stuff'
-rm -rf kernel/xiaomi/sm7435 && git clone https://github.com/Lafactorial/android_kernel_xiaomi_sm7435.git -b lineage-23 kernel/xiaomi/sm7435
-rm -rf kernel/xiaomi/sm7435-modules && git clone https://github.com/garnet-random/android_kernel_xiaomi_sm7435-modules.git -b lineage-22.2 kernel/xiaomi/sm7435-modules
-rm -rf kernel/xiaomi/sm7435-devicetrees && git clone https://github.com/garnet-random/android_kernel_xiaomi_sm7435-devicetrees.git -b lineage-22.2 kernel/xiaomi/sm7435-devicetrees
+rm -rf kernel/xiaomi/sm7435 && git clone https://github.com/Lafactorial/android_kernel_xiaomi_sm7435.git -b lineage-23.0 kernel/xiaomi/sm7435
+rm -rf kernel/xiaomi/sm7435-modules && git clone https://github.com/Lafactorial/android_kernel_xiaomi_sm7435-modules.git -b lineage-23.0 kernel/xiaomi/sm7435-modules
+rm -rf kernel/xiaomi/sm7435-devicetrees && git clone https://github.com/Lafactorial/android_kernel_xiaomi_sm7435-devicetrees.git -b lineage-23.0 kernel/xiaomi/sm7435-devicetrees
 
 # Camera Stuff
 echo 'Cloning Camera Stuff'
