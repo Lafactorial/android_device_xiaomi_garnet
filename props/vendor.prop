@@ -235,3 +235,6 @@ debug.renderengine.backend=skiavkthreaded
 debug.stagefright.renderengine.backend=threaded
 renderthread.skia.reduceopstasksplitting=true
 
+# Performance
+debug.performance.tuning=1
+
