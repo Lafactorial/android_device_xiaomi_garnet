@@ -2,32 +2,6 @@
 <device_data xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <format_version major="3" minor="3" maintenance="0"/>
   <tool_version major="3" minor="5" maintenance="0"/>
-  <preset id="ieq_balanced" type="ieq">
-    <data>
-      <ieq-bands>
-        <band_ieq frequency="47" target="157"/>
-        <band_ieq frequency="141" target="167"/>
-        <band_ieq frequency="234" target="218"/>
-        <band_ieq frequency="328" target="218"/>
-        <band_ieq frequency="469" target="203"/>
-        <band_ieq frequency="656" target="188"/>
-        <band_ieq frequency="844" target="192"/>
-        <band_ieq frequency="1031" target="192"/>
-        <band_ieq frequency="1313" target="205"/>
-        <band_ieq frequency="1688" target="213"/>
-        <band_ieq frequency="2250" target="218"/>
-        <band_ieq frequency="3000" target="209"/>
-        <band_ieq frequency="3750" target="193"/>
-        <band_ieq frequency="4688" target="159"/>
-        <band_ieq frequency="5813" target="134"/>
-        <band_ieq frequency="7125" target="97"/>
-        <band_ieq frequency="9000" target="71"/>
-        <band_ieq frequency="11250" target="22"/>
-        <band_ieq frequency="13875" target="-90"/>
-        <band_ieq frequency="19688" target="-283"/>
-      </ieq-bands>
-    </data>
-  </preset>
   <preset id="ieq_detailed" type="ieq">
     <data>
       <ieq-bands>
@@ -51,6 +25,32 @@
         <band_ieq frequency="11250" target="49"/>
         <band_ieq frequency="13875" target="-24"/>
         <band_ieq frequency="19688" target="-217"/>
+      </ieq-bands>
+    </data>
+  </preset>
+  <preset id="ieq_balanced" type="ieq">
+    <data>
+      <ieq-bands>
+        <band_ieq frequency="47" target="157"/>
+        <band_ieq frequency="141" target="167"/>
+        <band_ieq frequency="234" target="218"/>
+        <band_ieq frequency="328" target="218"/>
+        <band_ieq frequency="469" target="203"/>
+        <band_ieq frequency="656" target="188"/>
+        <band_ieq frequency="844" target="192"/>
+        <band_ieq frequency="1031" target="192"/>
+        <band_ieq frequency="1313" target="205"/>
+        <band_ieq frequency="1688" target="213"/>
+        <band_ieq frequency="2250" target="218"/>
+        <band_ieq frequency="3000" target="209"/>
+        <band_ieq frequency="3750" target="193"/>
+        <band_ieq frequency="4688" target="159"/>
+        <band_ieq frequency="5813" target="134"/>
+        <band_ieq frequency="7125" target="97"/>
+        <band_ieq frequency="9000" target="71"/>
+        <band_ieq frequency="11250" target="22"/>
+        <band_ieq frequency="13875" target="-90"/>
+        <band_ieq frequency="19688" target="-283"/>
       </ieq-bands>
     </data>
   </preset>
