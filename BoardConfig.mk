@@ -8,9 +8,6 @@ DEVICE_PATH := device/xiaomi/garnet
 
 BUILD_BROKEN_DUP_RULES := true
 
-# Inherit from proprietary files for miuicamera
--include device/xiaomi/miuicamera-garnet/BoardConfig.mk
-
 # A/B
 AB_OTA_PARTITIONS := \
     boot \
@@ -243,3 +240,6 @@ WPA_SUPPLICANT_VERSION := VER_0_8_X
 
 # Vendor
 include vendor/xiaomi/garnet/BoardConfigVendor.mk
+
+# Vendor MiuiCamera
+-include device/xiaomi/miuicamera-garnet/BoardConfig.mk
