@@ -99,7 +99,8 @@ blob_fixups: blob_fixups_user_type = {
         'odm/lib64/libMiPhotoFilter.so',
         'vendor/lib64/libalhLDC.so',
         'vendor/lib64/libalLDC.so',
-        'vendor/lib64/libTrueSight.so'
+        'vendor/lib64/libTrueSight.so',
+        'vendor/lib64/libMiVideoFilter.so'
     ): blob_fixup()
         .clear_symbol_version('AHardwareBuffer_allocate')
         .clear_symbol_version('AHardwareBuffer_describe')
