@@ -42,7 +42,7 @@ PRODUCT_SHIPPING_API_LEVEL := $(BOARD_SHIPPING_API_LEVEL)
 
 # Audio
 $(call soong_config_set, android_hardware_audio, run_64bit, true)
-$(call soong_config_set, android_hardware_audio, skip_speaker_layout_channel_mask_field, true)
+$(call soong_config_set_bool, android_hardware_audio, skip_speaker_layout_channel_mask_field, true)
 
 PRODUCT_PACKAGES += \
     android.hardware.audio@7.0-impl \
@@ -123,7 +123,7 @@ PRODUCT_PACKAGES += \
     android.hardware.boot-service.qti.recovery
 
 # Camera
-$(call soong_config_set,camera,override_format_from_reserved,true)
+$(call soong_config_set_bool,camera,override_format_from_reserved,true)
 
 PRODUCT_PACKAGES += \
     libcamera2ndk_vendor
@@ -236,7 +236,7 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     vendor.lineage.health-service.default
 
-$(call soong_config_set,lineage_health,charging_control_supports_bypass,false)
+$(call soong_config_set_bool,lineage_health,charging_control_supports_bypass,false)
 
 # Media Codec Packages
 PRODUCT_PACKAGES += \
@@ -461,7 +461,7 @@ PRODUCT_COPY_FILES += \
 
 # Vibrator
 $(call soong_config_set,qti_vibrator,effect_lib,libqtivibratoreffect.xiaomi)
-$(call soong_config_set,qti_vibrator,use_effect_stream,true)
+$(call soong_config_set_bool,qti_vibrator,use_effect_stream,true)
 
 PRODUCT_PACKAGES += \
     vendor.qti.hardware.vibrator.service
