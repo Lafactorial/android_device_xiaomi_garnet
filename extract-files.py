@@ -56,6 +56,8 @@ blob_fixups: blob_fixups_user_type = {
             'libgrpc++_unsecure.so',
             'libgrpc++_unsecure_prebuilt.so'
         ),
+    'vendor/bin/qguard': blob_fixup()
+        .add_needed('libbase_shim.so'),
     (
         'vendor/etc/camera/pureView_parameter.xml',
         'vendor/etc/camera/pureShot_parameter.xml'
