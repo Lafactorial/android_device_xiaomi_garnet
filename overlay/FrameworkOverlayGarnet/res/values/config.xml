@@ -887,4 +887,7 @@
 
     <!--Useful if you want to improve signal reception -->
     <bool name="config_ignoreRssnrSignalLevel">true</bool>
+	 
+    <!-- PowerOffAlarmService -->
+    <bool name="config_powerOffAlarmEnabled">true</bool>
 </resources>
