@@ -1,0 +1,2 @@
+allow hal_camera_default sysfs_thermal:dir search;
+allow hal_camera_default sysfs_thermal:file w_file_perms;
