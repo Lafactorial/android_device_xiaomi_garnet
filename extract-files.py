@@ -41,6 +41,8 @@ lib_fixups: lib_fixups_user_type = {
 }
 
 blob_fixups: blob_fixups_user_type = {
+    'system_ext/etc/init/qspa_system.rc': blob_fixup()
+        .regex_replace(r'\$\{ro\.boot\.vendor\.qspa:-default\}', 'default'),
     (
         'vendor/bin/hw/android.hardware.gnss-aidl-service-qti',
         'vendor/lib64/hw/android.hardware.gnss-aidl-impl-qti.so',
@@ -96,10 +98,11 @@ blob_fixups: blob_fixups_user_type = {
         'vendor/lib64/libalhLDC.so',
         'vendor/lib64/libalLDC.so',
         'vendor/lib64/libTrueSight.so',
-        'vendor/lib64/libMiVideoFilter.so'
+        'odm/lib64/libMiPhotoFilter.so'
     ): blob_fixup()
         .clear_symbol_version('AHardwareBuffer_allocate')
         .clear_symbol_version('AHardwareBuffer_describe')
+        .clear_symbol_version('AHardwareBuffer_isSupported')
         .clear_symbol_version('AHardwareBuffer_lock')
         .clear_symbol_version('AHardwareBuffer_lockPlanes')
         .clear_symbol_version('AHardwareBuffer_release')
