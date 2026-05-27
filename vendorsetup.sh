@@ -11,7 +11,7 @@ cd ../../../
 
 # Camera Stuff
 echo 'Cloning Camera Stuff'
-rm -rf device/xiaomi/miuicamera-garnet && git clone https://codeberg.org/lafactorial/android_device_xiaomi_garnet-miuicamera.git -b bp3a device/xiaomi/miuicamera-garnet
-rm -rf vendor/xiaomi/miuicamera-garnet && git clone https://codeberg.org/lafactorial/proprietary_vendor_xiaomi_garnet-miuicamera -b bp3a vendor/xiaomi/miuicamera-garnet
+rm -rf device/xiaomi/miuicamera-garnet && git clone https://gitea.com/Lafactorial/android_device_xiaomi_garnet-miuicamera.git -b bp3a device/xiaomi/miuicamera-garnet
+rm -rf vendor/xiaomi/miuicamera-garnet && git clone https://gitea.com/Lafactorial/proprietary_vendor_xiaomi_garnet-miuicamera.git -b bp3a vendor/xiaomi/miuicamera-garnet
 
 echo 'Cloning process is completed, now its time for lunch'
