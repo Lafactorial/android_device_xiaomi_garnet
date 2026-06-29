@@ -9,11 +9,21 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
 TARGET_SUPPORTS_OMX_SERVICE := false
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 
-# Inherit some common Lineage stuff.
+# Inherit some common Evolution X stuff.
 $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 
 # Inherit from garnet device
 $(call inherit-product, device/xiaomi/garnet/device.mk)
+
+# EvolutionX Config
+EVO_BUILD_TYPE := Unofficial
+TARGET_BOOT_ANIMATION_RES := 1080
+TARGET_BUILD_APERTURE_CAMERA := false
+TARGET_ENABLE_BLUR := true
+TARGET_EXCLUDES_AUDIOFX := true
+TARGET_FACE_UNLOCK_SUPPORTED := true
+TARGET_INCLUDE_ACCORD := false
+WITH_GMS := false
 
 PRODUCT_NAME := lineage_garnet
 PRODUCT_DEVICE := garnet
