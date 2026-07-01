@@ -1,3 +1,5 @@
+allow system_server securityfs:file write;
+
 allow system_server zygote_tmpfs:file write;
 allow system_server vendor_sysfs_battery_supply:file rw_file_perms;
 allow system_server vendor_sysfs_battery_supply:file { getattr open read };
