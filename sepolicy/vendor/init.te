@@ -6,3 +6,7 @@ allow init hal_dms_default:process { siginh rlimitinh transition };
 
 # KProfiles
 allow init sysfs_kprofiles:file { setattr };
+
+recovery_only(`
+allow init proc:file write;
+')
