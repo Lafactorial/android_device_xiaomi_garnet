@@ -38,7 +38,7 @@ INFINITY_MAINTAINER := HaKaN
 TARGET_SUPPORTS_BLUR := true
 
 # Gapps
-WITH_GAPPS := true
+WITH_GAPPS := false
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
     BuildDesc="garnet_global-user 16 BP2A.250605.031.A3 OS3.0.5.0.WNRMIXM release-keys" \
