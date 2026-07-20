@@ -9,6 +9,12 @@ cd kernel/xiaomi/sm7435
 git submodule update --init --recursive
 cd ../../../
 
+# Signig Stuff
+git clone https://github.com/ProjectInfinity-X/vendor_infinity-priv_keys-template.git -b QPR3 vendor/infinity-priv/keys
+cd vendor/infinity-priv/keys
+./keys.sh
+cd ../../../
+
 # Camera Stuff
 echo 'Cloning Camera Stuff'
 rm -rf device/xiaomi/garnet-miuicamera && git clone https://gitea.com/lafactorial/android_device_xiaomi_garnet-miuicamera.git -b sixteen-qpr2 device/xiaomi/garnet-miuicamera
