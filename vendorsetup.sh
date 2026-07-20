@@ -9,6 +9,12 @@ cd kernel/xiaomi/sm7435
 git submodule update --init --recursive
 cd ../../../
 
+# Signig Stuff
+git clone https://github.com/Lafactorial/vendor_lineage-priv_keys -b main vendor/lineage-priv/keys
+cd vendor/lineage-priv/keys
+./keys.sh
+cd ../../../
+
 # Camera Stuff
 echo 'Cloning Camera Stuff'
 rm -rf device/xiaomi/garnet-miuicamera && git clone https://gitea.com/lafactorial/android_device_xiaomi_garnet-miuicamera.git -b sixteen-qpr2 device/xiaomi/garnet-miuicamera
