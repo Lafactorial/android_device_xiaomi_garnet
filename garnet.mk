@@ -18,6 +18,7 @@ $(call inherit-product, device/xiaomi/garnet/device.mk)
 ASCP_MAINTAINER := HaKaN
 TARGET_SCREEN_WIDTH := 1080
 PRODUCT_OTA_ENFORCE_VINTF_KERNEL_REQUIREMENTS := false
+SOONG_NINJA = ninja
 
 PRODUCT_NAME := garnet
 PRODUCT_DEVICE := garnet
