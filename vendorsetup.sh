@@ -9,14 +9,21 @@ cd kernel/xiaomi/sm7435
 git submodule update --init --recursive
 cd ../../../
 
+# Signing Stuff
+if [ ! -f "vendor/lineage-priv/keys/keys.mk" ]; then
+    echo "Keys not found or incomplete. Setting up..."
+    rm -rf vendor/lineage-priv/keys
+    git clone --depth=1 https://github.com/Lafactorial/vendor_lineage-priv_keys -b main vendor/lineage-priv/keys
+    (
+        cd vendor/lineage-priv/keys
+        ./keys.sh
+    )
+else
+    echo "Existing keys found — keeping them"
+fi
+
 # Camera Stuff
 echo 'Cloning Camera Stuff'
 rm -rf device/xiaomi/garnet-miuicamera && git clone https://gitea.com/Lafactorial/android_device_xiaomi_garnet-miuicamera.git -b 17 device/xiaomi/garnet-miuicamera
 rm -rf vendor/xiaomi/garnet-miuicamera && git clone https://gitea.com/Lafactorial/proprietary_vendor_xiaomi_garnet-miuicamera.git -b 17 vendor/xiaomi/garnet-miuicamera
-
-# Signig Stuff
-git clone https://github.com/Evolution-X/vendor_evolution-priv_keys-template vendor/evolution-priv/keys
-cd vendor/evolution-priv/keys
-./keys.sh
-cd ../../../
 echo 'Cloning process is completed, now its time for lunch'
