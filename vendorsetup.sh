@@ -14,9 +14,16 @@ echo 'Cloning Camera Stuff'
 rm -rf device/xiaomi/garnet-miuicamera && git clone https://gitea.com/Lafactorial/android_device_xiaomi_garnet-miuicamera.git -b 17 device/xiaomi/garnet-miuicamera
 rm -rf vendor/xiaomi/garnet-miuicamera && git clone https://gitea.com/Lafactorial/proprietary_vendor_xiaomi_garnet-miuicamera.git -b 17 vendor/xiaomi/garnet-miuicamera
 
-# Signig Stuff
-git clone https://github.com/Evolution-X/vendor_evolution-priv_keys-template vendor/evolution-priv/keys
-cd vendor/evolution-priv/keys
-./keys.sh
-cd ../../../
+# Signing Stuff
+if [ ! -f "vendor/evolution-priv/keys/keys.mk" ]; then
+    echo "Keys not found or incomplete. Setting up..."
+    rm -rf vendor/evolution-priv/keys
+    git clone --depth=1 https://github.com/Evolution-X/vendor_evolution-priv_keys-template vendor/evolution-priv/keys
+    (
+        cd vendor/evolution-priv/keys
+        ./keys.sh
+    )
+else
+    echo "Existing keys found — keeping them"
+fi
 echo 'Cloning process is completed, now its time for lunch'
