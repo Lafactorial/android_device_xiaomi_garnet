@@ -9,11 +9,18 @@ cd kernel/xiaomi/sm7435
 git submodule update --init --recursive
 cd ../../../
 
-# Signig Stuff
-git clone https://github.com/ProjectInfinity-X/vendor_infinity-priv_keys-template.git -b QPR3 vendor/infinity-priv/keys
-cd vendor/infinity-priv/keys
-./keys.sh
-cd ../../../
+# Signing Stuff
+if [ ! -f "vendor/infinity-priv/keys/keys.mk" ]; then
+    echo "Keys not found or incomplete. Setting up..."
+    rm -rf vendor/infinity-priv/keys
+    git clone --depth=1 https://github.com/ProjectInfinity-X/vendor_infinity-priv_keys-template vendor/infinity-priv/keys
+    (
+        cd vendor/infinity-priv/keys
+        ./keys.sh
+    )
+else
+    echo "Existing keys found — keeping them"
+fi
 
 # Camera Stuff
 echo 'Cloning Camera Stuff'
