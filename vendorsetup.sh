@@ -18,9 +18,10 @@ rm -rf vendor/xiaomi/garnet-miuicamera && git clone https://gitea.com/lafactoria
 if [ ! -f "vendor/lineage-priv/keys/keys.mk" ]; then
     echo "Keys not found or incomplete. Setting up..."
     rm -rf vendor/lineage-priv/keys
-    git clone --depth=1 https://github.com/Lafactorial/vendor_lineage-priv_keys -b main vendor/lineage-priv/keys
+    git clone --depth=1 https://github.com/Lafactorial/vendor_lineage-priv_keys vendor/lineage-priv/keys
     (
-        cd vendor/lineage-priv/keys
+        cd vendor/lineage-priv/keys || exit 1
+        chmod +x keys.sh
         ./keys.sh
     )
 else
