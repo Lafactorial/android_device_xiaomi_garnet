@@ -10,12 +10,12 @@ git submodule update --init --recursive
 cd ../../../
 
 # Signing Stuff
-if [ ! -f "vendor/lineage-priv/keys/keys.mk" ]; then
+if [ ! -f "vendor/ascp-priv/keys/keys.mk" ]; then
     echo "Keys not found or incomplete. Setting up..."
-    rm -rf vendor/lineage-priv/keys
-    git clone --depth=1 https://github.com/Lafactorial/vendor_lineage-priv_keys -b main vendor/lineage-priv/keys
+    rm -rf vendor/ascp-priv/keys
+    git clone --depth=1 https://github.com/Lafactorial/vendor_lineage-priv_keys -b main vendor/ascp-priv/keys
     (
-        cd vendor/lineage-priv/keys
+        cd vendor/ascp-priv/keys
         ./keys.sh
     )
 else
