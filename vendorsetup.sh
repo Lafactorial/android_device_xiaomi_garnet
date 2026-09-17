@@ -16,6 +16,7 @@ if [ ! -f "vendor/ascp-priv/keys/keys.mk" ]; then
     git clone --depth=1 https://github.com/Lafactorial/vendor_lineage-priv_keys -b main vendor/ascp-priv/keys
     (
         cd vendor/ascp-priv/keys
+        chmod +x keys.sh
         ./keys.sh
     )
 else
