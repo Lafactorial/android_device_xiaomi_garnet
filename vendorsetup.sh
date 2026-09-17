@@ -13,7 +13,7 @@ cd ../../../
 if [ ! -f "vendor/ascp-priv/keys/keys.mk" ]; then
     echo "Keys not found or incomplete. Setting up..."
     rm -rf vendor/ascp-priv/keys
-    git clone --depth=1 https://github.com/Lafactorial/vendor_lineage-priv_keys -b main vendor/ascp-priv/keys
+    git clone --depth=1 https://github.com/Lafactorial/vendor_lineage-priv_keys vendor/ascp-priv/keys
     (
         cd vendor/ascp-priv/keys || exit 1
         chmod +x keys.sh
