@@ -40,7 +40,7 @@ clone_or_update "https://github.com/Lafactorial/android_kernel_xiaomi_sm7435-dev
 if [ ! -f "vendor/custom-priv/keys/keys.mk" ]; then
     echo "Keys not found or incomplete. Setting up..."
     rm -rf vendor/custom-priv/keys
-    git clone --depth=1 https://github.com/Evolution-X/vendor_evolution-priv_keys-template vendor/custom-priv/keys
+    git clone --depth=1 https://github.com/Lafactorial/vendor_custom-priv_keys-template vendor/custom-priv/keys
     (
         cd vendor/custom-priv/keys || exit 1
         rm -f testkey.pk8 testkey.x509.pem
